@@ -26,3 +26,40 @@ public:
         
     }
 };
+
+
+
+
+
+/// worked 
+
+class Solution {
+public:
+    void setZeroes(vector<vector<int>>& matrix) {
+        
+        int n = matrix.size();
+        int m = matrix[0].size();
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(matrix[i][j]==0){
+                    int p = i;
+                    int q = j;
+                    for(int k=0;k<m;k++){
+                        if(matrix[p][k]!=0)matrix[p][k]=-10021;
+                    }
+                    for(int k=0;k<n;k++){
+                        if(matrix[k][q]!=0)matrix[k][q]=-10021;
+                    }
+                }
+            }
+        }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(matrix[i][j]==-10021){
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+    }
+};
