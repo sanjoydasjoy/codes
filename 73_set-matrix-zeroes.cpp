@@ -1,4 +1,4 @@
-
+//better but space complexity O(n) + O(m)
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
@@ -31,7 +31,7 @@ public:
 
 
 
-/// worked 
+///brute force complexity - (n*m) * (n+m) + (n*m)
 
 class Solution {
 public:
