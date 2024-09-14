@@ -1,6 +1,6 @@
 /* 
     Naive approach
-    TC: O(NlogN) + O(N)  SC: O(N)
+    TC: O(NlogN) + O(N)  SC: O(1)
     This will distort the array.
 */
 
@@ -19,6 +19,7 @@ public:
 
 /*
     Using Hashing / Frequency array
+    TC:  O(N)  SC: O(N)
 */
 
 class Solution {
