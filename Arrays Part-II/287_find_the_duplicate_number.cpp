@@ -2,7 +2,7 @@
     Naive approach
     TC: O(NlogN) + O(N)  SC: O(N)
     This will distort the array.
-/*
+*/
 
 class Solution {
 public:
