@@ -1,6 +1,5 @@
-/*
-  brute force TC: O(n^2) SC: O(1)
-*/
+// brute force TC: O(n^2) SC: O(1)
+
 #include <bits/stdc++.h> 
 long long getInversions(long long *arr, int n){
     int cnt=0;
