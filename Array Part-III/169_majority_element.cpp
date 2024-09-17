@@ -8,11 +8,10 @@ public:
             mpp[nums[i]]++;
         }
         for (auto i : mpp) {
-            if (i.second > mx) {
-                mx = i.second;
-                p = i.first;
+            if (i.second > n/2) {
+                return i.first;
             }
         }
-        return p;
+        return -1;
     }
 };
