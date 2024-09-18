@@ -1,3 +1,10 @@
+
+/* 
+    hashing solution - better soln
+    TC: O(nlogn) + O(n) 
+    SC: O(n) // if all the elements in the array is unique
+
+*/
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
