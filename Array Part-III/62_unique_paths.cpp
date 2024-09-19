@@ -1,3 +1,28 @@
+// Combinatorial approach to calculate unique paths in an m x n grid
+// Time complexity: O(n-1) or O(m-1) for the loop
+// Space complexity: O(1) as no extra space is used
+
+
+
+class Solution {
+public:
+
+    int uniquePaths(int m, int n) {
+
+        double x = m+n-2,y = m-1,ans = 1;
+
+        for(int i=1;i<=y;i++){
+            ans *= x;
+            ans /= i;
+            x-=1;
+        }
+        return (int)(ans + 0.5);
+
+    }
+};
+
+
+
 // dynamic programming 
 
 class Solution {
