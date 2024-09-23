@@ -2,6 +2,7 @@
 // TC: O(n) for inserting into unordered set
 //    +O(2n) for total of 14 iteration if we consider this array 102 4 100 1 101 3 2 
 //    so total of O(n) + O(2n) = O(3n) under the assumption of unordered set taking O(1) for inserting and finding (except best and avg case)
+// SC: O(n) assuming all values are unique
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
