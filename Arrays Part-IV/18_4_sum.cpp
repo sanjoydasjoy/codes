@@ -70,6 +70,14 @@ public:
 
 //brute force TC: O(n^4) SC: O(number of quads)*2 for set and ans
 
+//Inserting into a set takes O(log m) where m is the size of the set. 
+//If the set contains at most O(n⁴) elements (the worst case, based on the four nested loops),
+//the time complexity for an insertion would be O(log (n⁴)).
+//so set insertion could take up to O(log n⁴) = O(4 log n) = O(log n).
+//This is relatively insignificant compared to the O(n⁴) iteration count, 
+//so it doesn't change the overall time complexity.
+
+
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
