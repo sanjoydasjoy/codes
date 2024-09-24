@@ -20,3 +20,24 @@ public:
         return mx;
     }
 };
+// similar but without using set
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int n=s.size();
+        if(n==0)return 0;
+        int mx=0;
+        for(int i=0;i<n;i++){
+            vector<int> freq(256, 0);
+            for(int j=i;j<n;j++){
+                if(freq[s[j]]!=0){
+                    break;
+                }
+                freq[s[j]]++;
+                mx=max(mx,j-i+1);
+            }
+        }
+        return mx;
+    }
+};
