@@ -1,3 +1,29 @@
+//optimal using sliding window-two pointers O(n) 
+// TC: O(n) SC: O(256) which is O(1)
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int n=s.size();
+        if(n==0)return 0;
+        int l=0,r=0,mxlen=0;
+        int hash[256];
+        memset(hash, -1, sizeof(hash));
+        while(r<n){
+            if(hash[s[r]]!=-1){
+                if(hash[s[r]]>=l){
+                    l=hash[s[r]]+1;
+                }
+            }
+            mxlen=max(mxlen,r-l+1);
+            hash[s[r]]=r;
+            r++;
+        }
+        return mxlen;
+    }
+};
+
+
 //brute force TC: O(n²) SC:O(n)
 
 class Solution {
