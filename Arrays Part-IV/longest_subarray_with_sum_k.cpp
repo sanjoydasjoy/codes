@@ -1,3 +1,25 @@
+//better approach
+#include<bits/stdc++.h>
+int longestSubarrayWithSumK(vector<int> a, long long k) {
+    int len=0;
+    int n = a.size();
+    long long sum=0;
+    map<int,int>preSumMap;
+    for(int i=0;i<n;i++){
+            sum+=a[i];
+            if(sum==k)len=max(len,i+1);
+            int rem=sum-k;
+            if(preSumMap.find(rem)!=preSumMap.end()){
+                int p = i-preSumMap[rem];
+                len=max(len,p);
+            }
+            if(preSumMap.find(sum)==preSumMap.end())preSumMap[sum]=i;
+        
+    }
+    return len;
+}
+
+
 // brute force O(n^2)
 int longestSubarrayWithSumK(vector<int> a, long long k) {
     int len=0;
