@@ -9,7 +9,7 @@ int longestSubarrayWithSumK(vector<int> a, long long k) {
     
     while(r<n){
         sum+=a[r];
-        while(sum>k){
+        while(sum>k && l<=r){
             sum-=a[l];
             l++;
         }
@@ -20,7 +20,6 @@ int longestSubarrayWithSumK(vector<int> a, long long k) {
     }
     return len;
 }
-
 
 //better approach
 // TC: O(n*logn) if its ordered map , SC: O(n)
