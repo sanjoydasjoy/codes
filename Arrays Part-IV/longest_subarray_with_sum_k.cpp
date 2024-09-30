@@ -1,4 +1,30 @@
+// optimal approach
+
+#include<bits/stdc++.h>
+int longestSubarrayWithSumK(vector<int> a, long long k) {
+    int len=0;
+    int n = a.size();
+    long long sum=0;
+    int l=0,r=0;
+    
+    while(r<n){
+        sum+=a[r];
+        while(sum>k){
+            sum-=a[l];
+            l++;
+        }
+        if(sum==k){
+            len=max(len,r-l+1);
+        }
+        r++;
+    }
+    return len;
+}
+
+
 //better approach
+// TC: O(n*logn) if its ordered map , SC: O(n)
+// optimal approach for positives and negatives
 #include<bits/stdc++.h>
 int longestSubarrayWithSumK(vector<int> a, long long k) {
     int len=0;
