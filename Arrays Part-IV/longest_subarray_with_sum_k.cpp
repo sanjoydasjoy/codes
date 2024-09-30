@@ -1,4 +1,4 @@
-// optimal approach
+// optimal approach if its positives and zeros TC: O(2n), SC:O(1)
 
 #include<bits/stdc++.h>
 int longestSubarrayWithSumK(vector<int> a, long long k) {
