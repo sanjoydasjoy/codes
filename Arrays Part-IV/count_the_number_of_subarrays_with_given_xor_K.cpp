@@ -15,8 +15,6 @@ int subarraysWithSumK(vector < int > a, int b) {
     return cnt;
 }
 
-
-
 //brute force TC: O(n^2) SC: O(1)
 
 int subarraysWithSumK(vector < int > a, int b) {
