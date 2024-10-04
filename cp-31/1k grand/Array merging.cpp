@@ -125,24 +125,10 @@ void sieve(int n){
 				mx=1;}
 			}
 			for(auto i:u)res=max(res,mp[i]+mpp[i]);
-			//for(auto i:v)res=max(res,mp[i]+mpp[i]);
+			for(auto i:v)res=max(res,mp[i]+mpp[i]);
 				cout<<res<<endl;
 
 		}
 
 
-/*
-4
-1
-2
-2
-3
-1 2 3
-4 5 6
-2
-1 2
-2 1
-5
-1 2 2 2 2
-2 1 1 1 1
-*/
+
