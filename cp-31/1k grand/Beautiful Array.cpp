@@ -14,7 +14,6 @@ void Dutch_National_Flag_Algorithm(vector<int>v){
             low++;
             mid++;
         }
-        else if(v[mid]==1)mid++;
         else {
             swap(v[mid],v[high]);
             high--;
