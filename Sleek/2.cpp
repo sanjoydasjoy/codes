@@ -1,4 +1,5 @@
 /*
+2-paper
 You want to cut a piece of paper by a certain fixed rule to make some pieces of white or 
 blue colored square paper with various sizes.  
  
