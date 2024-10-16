@@ -1,5 +1,6 @@
 
 /*
+9-crowPot
 There are N pots. Every pots has some water in it. They may be partially filled. 
 Every pot is associated with overflow number O which tell how many minimum no. of stones required 
 for that pot to overflow. The crow know O1 to On(overflow no. for all the pots). Crow wants some K 
