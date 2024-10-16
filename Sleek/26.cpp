@@ -1,4 +1,5 @@
 /*
+26-spaceshipCoins
 You’ll be given a grid as below:
     0 1 0 2 0
     0 2 2 2 1
