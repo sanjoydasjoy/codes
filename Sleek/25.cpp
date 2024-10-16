@@ -1,4 +1,5 @@
 /*
+25-sinkHole
 Q.There is a large plot with various sinkholes present. 
 	Since one sinkhole can combine with another sinkhole, it is required to get
 	at most one sinkhole while occupying the plot. You have to find the maximum 
