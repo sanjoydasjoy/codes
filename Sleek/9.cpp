@@ -1,4 +1,3 @@
-
 /*
 9-crowPot
 There are N pots. Every pots has some water in it. They may be partially filled. 
