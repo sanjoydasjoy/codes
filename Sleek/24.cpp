@@ -1,4 +1,5 @@
 /*
+24-researchCenter
 A Research team want to establish a research center in a region where they found some rare-elements.
 They want to make it closest to all the rare-elements as close as possible so that they can reduce
 overall cost of research over there. It is given that all the rare-element’s location is connected
