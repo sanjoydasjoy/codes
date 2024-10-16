@@ -1,4 +1,5 @@
 /*
+1-pcConfiguration
 Given below are the raw materials quantities and their respective selling price(if sold as raw).
 
 D --> No of CPUs
