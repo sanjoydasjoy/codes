@@ -1,4 +1,5 @@
 /*
+30-rockClimbing
 Raka wants to climb a rock from a starting point to the destination point. Given a map of the rock mountain which N = height, M = width. 
 In the map, character '-' is the possible foot place spot (where he can climb). He can freely move up/down at vertical spots which '-' exists 
 sequentially. It's impossible to move horizontally in case '-' is not consecutive in the same height level. The maximum height of moving from 
