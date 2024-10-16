@@ -1,5 +1,5 @@
 /*
-  10-cycleDirectedGraph
+10-cycleDirectedGraph
 5 5
 1 2 2 4 4 5 5 3 3 2                         
 */
