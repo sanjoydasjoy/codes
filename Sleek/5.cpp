@@ -1,4 +1,5 @@
 /*
+5-burstBalloon1
 There are n balloons and n bullets and each balloon is assigned with a particular number (point).
 Whenever a particular balloon is shot the no of points increases by
 1.the multiplication of point assigned to balloon on left and that of right side.
