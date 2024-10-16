@@ -1,4 +1,5 @@
 /*
+23-pillar
 You have to place an electronic banner of a company as high as it can be, so that whole the city can view the banner 
 standing on top of TWO PILLERS.
 The height of two pillers are to be chosen from given array.. say [1, 2, 3, 4, 6]. We have to maximise the height
