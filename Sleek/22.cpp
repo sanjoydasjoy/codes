@@ -1,4 +1,5 @@
 /*
+22-omniousNumber
 Company  A  is discarding product numbers that contain few specific digits a specific number of time or 
 more than that. You are given a range and you need to find product numbers that are possible.
 
