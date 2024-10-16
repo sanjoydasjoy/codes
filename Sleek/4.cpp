@@ -1,4 +1,5 @@
 /*
+4-graphColoring
 Given a graph print either of the set of the vertices that are colored with the same color. And if the graph
 is not bipartite print “-1”. Test cases also included the cases when a graph is not connected.
 */
