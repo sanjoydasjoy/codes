@@ -57,14 +57,13 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        cin >> companies >> mines;
+        cin>>companies>>mines;
 
         vector<int> oilMines(mines);
         vector<bool> visited(mines, false);
 
-        for (int i = 0; i < mines; i++) {
-            cin >> oilMines[i];
-        }
+        for (int i = 0; i < mines; i++)cin >> oilMines[i];
+        
 
         ans = INT_MAX;
         for (int i = 0; i < mines; i++)
