@@ -131,7 +131,7 @@ public class LinkedList_1 {
         int i = 0;
 
         while (temp != null) {
-            if (temp.data == key) { // key found
+            if (temp.data == key) { 
                 return i;
             }
             temp = temp.next;
