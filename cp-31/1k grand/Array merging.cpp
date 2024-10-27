@@ -71,8 +71,7 @@ void sieve(int n){
 		if(i==s1.size() or j==t1.size())return;
 
 		if(mark[i][j]==1){
-			cout<<s1[i];
-			print_way(i+1,j+1);
+			cout<<s1[i];print_way(i+1,j+1);
 		}
 		else if(mark[i][j]==2){
 			print_way(i+1,j);
