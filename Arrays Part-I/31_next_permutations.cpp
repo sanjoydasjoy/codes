@@ -1,4 +1,4 @@
-//c++ built in function 
+//c++ built in 
 
 #include<iostream>
 #include<vector>
