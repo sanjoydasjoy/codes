@@ -1,7 +1,3 @@
-
-
-
-
 # Indexing in SQL
 
 Indexing in a database is a technique used to speed up the retrieval of specific records from a table. 
@@ -10,6 +6,11 @@ Similar to an index at the back of a book, a database index helps locate data qu
 ## Benefits of Indexing
 - Speeds up data retrieval (especially on large tables)
 - Reduces disk I/O
+
+## Indexes Term
+- A search key is an attribute (or a combination of attributes) used to look up records in a database.
+- ![search key](./src/search-key.jpg)
+
 
 ## Types of Indexes
 1. **Primary Index**: Automatically created on the primary key.
