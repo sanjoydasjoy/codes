@@ -7,7 +7,7 @@ Definition: Storage that loses its data when the power is turned off.<br>
 Examples: Primary memory (RAM) and cache memory.<br>
 Usage: Often used for temporary data storage while programs are running due to its high speed but low persistence.<br>
 <br><br>
-2. Non-Volatile Storage:
+2. Non-Volatile Storage:<br>
 
 Definition: Storage that retains data even after power is turned off.<br>
 Examples: HDDs, SSDs, Optical disks (CDs, DVDs), magnetic tapes.<br>
