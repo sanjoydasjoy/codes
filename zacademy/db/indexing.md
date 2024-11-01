@@ -10,6 +10,8 @@ Similar to an index at the back of a book, a database index helps locate data qu
 ## Indexes Term
 - A search key is an attribute (or a combination of attributes) used to look up records in a database.
 - <img src="./src/search-key.jpg" alt="search key" width="400"/>
+- Index File: An index file is a smaller, separate file that stores "index entries," which consist of search keys and pointers to the actual records in the main database file.
+
 
 
 
