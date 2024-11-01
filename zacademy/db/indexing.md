@@ -26,5 +26,24 @@ we shall consider several techniques for ordered indexing. No techniques is best
 5. Space overhead
 
 ## Ordered indices have two main types:
-1. Primary (Clustered) index : sorts the data by a chosen key, its often primary key but not necessarily. it can be different column.
+1. Primary (Clustered) index : sorts the data by a chosen key, its often primary key but not necessarily. it can be different column.<br>
 2. Secondary (Unclustered) index : uses search key that does not follow the main data order. thats why its called non clustering.
+
+<img src="./src/types-indices.jpg" alt="types indices" width="400"/>
+
+
+## Dense Index:
+- Dense indexing is a database index type that includes an index record for every search key value in a database.
+- There is an index entry for every record in the database.
+- Dense indexing makes it to retrieve data for range based queries because of it detailed nature.
+- It also requires more space to store index records which can be limitation for large databases.
+
+
+## Sparse Index:
+- A database index that contains an index record for only some of the search key values in the database.
+- Works well if records are stored in a sequential order based on the search key.
+- To find a specific record with a search key K: First, locate the index entry with the largest key that is less than K. Then, search through the file starting from this entry. (example: looking for book id-46, and the sparse index has entries for books id-10,30,50,70)
+- Advantages: space efficient- uses less space.
+- Trade-off : It may be slower to find specific records than a dense index, but it’s a good balance when space and maintenance are key considerations.
+
+
