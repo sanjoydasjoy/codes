@@ -12,20 +12,8 @@ Similar to an index at the back of a book, a database index helps locate data qu
 - <img src="./src/search-key.jpg" alt="search key" width="400"/>
 - Index File: An index file is a smaller, separate file that stores "index entries," which consist of search keys and pointers to the actual records in the main database file.
 
+## Types of Indices
+1. **Ordered Indices**: store search keys in sorted order
+2. **Hash Indices**: hash indices use a soecial function hash function to divide search keys into different groups, known as 'buckets'. Each bucket holds items with similar hash values, which makes finding exact matches very fast.
 
 
-
-
-## Types of Indexes
-1. **Primary Index**: Automatically created on the primary key.
-2. **Unique Index**: Prevents duplicate values.
-3. **Composite Index**: Combines multiple columns for multi-column search optimization.
-4. **Full-Text Index**: Optimizes text search for large text fields.
-
-## How Indexes Work
-Indexes are typically stored as B-trees or hash tables, which help the database quickly locate data.
-
-## Example
-```sql
-CREATE INDEX idx_user_lastname
-ON Users (last_name);
