@@ -24,3 +24,7 @@ we shall consider several techniques for ordered indexing. No techniques is best
 3. Insertion time
 4. Deletion time
 5. Space overhead
+
+## Ordered indices have two main types:
+1. Primary (Clustered) index : sorts the data by a chosen key, its often primary key but not necessarily. it can be different column.
+2. Secondary (Unclustered) index : uses search key that does not follow the main data order. thats why its called non clustering.
