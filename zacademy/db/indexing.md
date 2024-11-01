@@ -17,3 +17,10 @@ Similar to an index at the back of a book, a database index helps locate data qu
 2. **Hash Indices**: hash indices use a soecial function hash function to divide search keys into different groups, known as 'buckets'. Each bucket holds items with similar hash values, which makes finding exact matches very fast.
 
 
+## Index Evaluation Metrics
+we shall consider several techniques for ordered indexing. No techniques is best. Each technique is must be evaluated on the basis of these factors:-<br>
+1. Access data
+2. Access time
+3. Insertion time
+4. Deletion time
+5. Space overhead
