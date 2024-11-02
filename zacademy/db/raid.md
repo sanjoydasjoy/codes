@@ -13,7 +13,7 @@ Examples: HDDs, SSDs, Optical disks (CDs, DVDs), magnetic tapes.<br>
 Usage: Ideal for long-term data storage due to data persistence.<br>
 
 <br><br>
-*Factors Affecting Choice of Storage Media* <br>
+**Factors Affecting Choice of Storage Media** <br>
 Speed: <br>
 Faster Media: RAM, SSDs.<br>
 Slower Media: HDDs, magnetic tapes (typically used for backups).<br>
@@ -21,9 +21,11 @@ Slower Media: HDDs, magnetic tapes (typically used for backups).<br>
 Cost per Unit of Data:
 <br>
 High Cost: Faster media such as SSDs and RAM.<br>
-Low Cost: Slower media like HDDs and magnetic tapes.<br>
+Low Cost: Slower media like HDDs and magnetic tapes.<br><br>
 Reliability:<br>
 More Reliable: Non-volatile media, especially for long-term storage.<br>
 Less Reliable: Volatile memory (RAM), which loses data if power is lost.<br>
+
+## Storage Hierarchy
 
 
