@@ -26,6 +26,6 @@ Reliability:<br>
 More Reliable: Non-volatile media, especially for long-term storage.<br>
 Less Reliable: Volatile memory (RAM), which loses data if power is lost.<br>
 
-## Storage Hierarchy
+
 
 
