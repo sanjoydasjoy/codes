@@ -24,3 +24,29 @@ WHERE id = 1;
 
 
 SELECT * FROM SUB2
+
+
+column addition / deletion / modification
+
+ALTER TABLE SUB2
+ADD email VARCHAR(255);
+INSERT INTO SUB2 (name, date_of_birth, email)
+VALUES
+    ('SANJOY', '2001-10-16', 'sanjoy@gmail.com'), ///DOING THIS WILL ADD NEW ROWS
+    ('*', '2001-12-01','sanjoy@gmail.com');
+
+DELETE FROM SUB2 WHERE id = 4 OR id = 6 ///HAVE TO USE "OR" TO MAKE 2 OR MORE ROWS DELETED
+
+UPDATE SUB2
+SET email = 'sanjoy@example.com'
+WHERE name = 'SANJOY';
+
+UPDATE SUB2
+SET email = '*@example.com'
+WHERE name = '*';
+
+ALTER TABLE SUB2
+DROP COLUMN email;  ///DELETION OF COLUMN
+
+ALTER TABLE SUB2
+MODIFY COLUMN name VARCHAR(200); /// MODIFICATION OF COLUMN
