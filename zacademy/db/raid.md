@@ -1,6 +1,6 @@
 # Storage
 In computer systems, physical storage can be classified based on volatility. <br><br>
-## Classification by Volatility 
+## Classification by Volatility
 
 1. Volatile Storage:<br>
 Definition: Storage that loses its data when the power is turned off.<br>
