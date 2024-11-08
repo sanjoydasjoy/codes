@@ -17,7 +17,8 @@ public:
         }
         for(int i=ss.size()-1;i>=0;i--){
             p+=ss[i];
-            if(i!=0) p += " ";
+            if(i!=0) 
+                p += " ";
         }
         return p;
 
