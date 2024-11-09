@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> findErrorNums(vector<int>& nums) {
-
+        
         vector<int> well;
         int p[] = {1};
         int f = 1, sum = 0, n = nums.size();
