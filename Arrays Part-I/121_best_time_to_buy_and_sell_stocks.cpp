@@ -1,5 +1,4 @@
 //optimal using kadanes algo
-
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
