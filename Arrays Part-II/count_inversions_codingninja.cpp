@@ -48,7 +48,6 @@ long long getInversions(long long *arr, int n) {
   return cnt;
 }
 
-
 // in interviews its better not to use global variable...
 
 #include <bits/stdc++.h>
