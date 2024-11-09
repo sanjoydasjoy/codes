@@ -56,7 +56,6 @@ int main()
     //int n;cin>>n;
     //printRow(n);
 
-
     /*
         print entire pascal triangle from given row number
     */
