@@ -7,7 +7,6 @@
 4 3
 2 3
 */
-
 #include <iostream>
 #include <vector>
 
