@@ -22,7 +22,6 @@ public class LinkedList_1 {
             return;
         }
         
-
         // step2 - newNode next = head
         newNode.next = head;
 
