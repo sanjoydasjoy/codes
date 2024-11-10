@@ -47,6 +47,7 @@ public class LinkedList_1 {
         tail = newNode;
 
     }
+    
 
     public void addMiddle(int index, int data) {
         if (index == 0) {
