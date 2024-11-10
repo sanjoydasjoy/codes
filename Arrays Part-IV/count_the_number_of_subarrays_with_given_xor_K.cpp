@@ -1,6 +1,5 @@
 //optimal appraoch TC: O(nlogn) SC: O(n)
 
-
 #include<bits/stdc++.h>
 int subarraysWithSumK(vector < int > a, int b) {
     int cnt=0,x=0;
