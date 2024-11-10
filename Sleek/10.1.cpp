@@ -24,6 +24,7 @@ void dfs(int u, vector< int > v) {
         s.insert(i);
         sum += i;
     }
+    
 
     if(s.size() != v.size()) {
         if(v[0] == v.back()) {
