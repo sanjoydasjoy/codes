@@ -4,7 +4,6 @@ Mr. Lee has to travel various offices abroad to assist branches of each place. B
 The airfare would be real high as all offices he has to visit are in foreign countries. He wants to visit every 
 location only one time and return home with the lowest expense. Help this company-caring man calculate the lowest expense.
 
-
 Input format
 Several test cases can be included in the inputs. T, the number of cases is given in the first row of the inputs. 
 After that, the test cases as many as T (T ≤ 30) are given in a row. N, the number of offices to visit is given on 
