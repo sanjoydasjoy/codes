@@ -8,6 +8,7 @@ the same passage you used once.
 When locations of a maze and jewels are given, find out the greatest number of jewels you can get 
 without taking the same passage twice, and the path taken in this case.
 
+
 Input
 There can be more than one test case in the input file. The first line has T, the number of test cases.
 Then the totally T test cases are provided in the following lines (T ≤ 10 ).
