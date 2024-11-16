@@ -13,6 +13,15 @@ Finally, the Physical Layer sends the bits through physical media, like cables o
 Once it reaches the destination, the process is reversed, and the email is reconstructed on the receiving device, eventually reaching the email application.
 
 
+Physical layer -> lowest level -> Resposible for transmitting indivisual bits from one node to the next
+1. Bits transmission
+2. data rate (transmissian rate) ssntrol
+3. synchronization of bits
+4. physical characteristies of interfaces and media
+5. Protocols: DSL , 10Base_T
+
+Data link layer -> Responsible fon transmitting frames from one node to another -> works with various types of links (wired LANs/WANs, wireless LANs/WANs)
+
 
 According to OSI Model
 theres 7 layers
