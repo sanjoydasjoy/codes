@@ -4,7 +4,7 @@ theres 5 layers
 application layer -> transport layer -> network layer -> data link layer -> physical layer 
 
 
-Data Journey Recap:
+Data Journey:
 My email (application data) is passed down from the Application Layer to the Transport Layer (TCP), where it is broken into segments.
 These segments are passed to the Network Layer (IP), where they are addressed and routed.
 The Data Link Layer formats them to frames for transmission on a local network (ie Ethernet/WiFi).
