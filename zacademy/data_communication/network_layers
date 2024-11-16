@@ -19,6 +19,8 @@ theres 7 layers
 
 application layer -> presentation layer-> session layer -> transport layer -> network layer -> data link layer -> physical layer 
 
+Lack of OSI Model’s Success
+Costly, Some of layers were never fully defined, Performance 
 
 
 
