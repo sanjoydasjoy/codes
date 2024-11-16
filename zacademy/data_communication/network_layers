@@ -29,6 +29,11 @@ Data link layer -> Responsible fon transmitting frames from one node to another 
 6. Access control
 7. Protocols: Ethernet , WiFi
 
+Netword Layer -> Responsible for transmitting Packets (datagrams) from source host to destination host across multiple networks
+1. determines th best route for packets to travel from source to destination 
+2. encapsulates data into packets called datagram
+3. includes main protocol IP (IPV4,IPV6) -> connection-less protocol -> no flow control, no error control
+
 
 According to OSI Model
 theres 7 layers
