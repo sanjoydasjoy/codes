@@ -17,7 +17,7 @@ Once it reaches the destination, the process is reversed, and the email is recon
 According to OSI Model
 theres 7 layers
 
-application layer ->Presentation Layer-> transport layer -> network layer -> data link layer -> physical layer 
+application layer -> presentation layer-> Session Layer -> transport layer -> network layer -> data link layer -> physical layer 
 
 
 
