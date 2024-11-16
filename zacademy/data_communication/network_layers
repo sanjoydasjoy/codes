@@ -2,3 +2,18 @@ According to TCP/IP
 theres 5 layers
 
 application layer -> transport layer -> network layer -> data link layer -> physical layer 
+
+
+Data Journey Recap:
+My email (application data) is passed down from the Application Layer to the Transport Layer (TCP), where it is broken into segments.
+These segments are passed to the Network Layer (IP), where they are addressed and routed.
+The Data Link Layer formats them to frames for transmission on a local network (ie Ethernet/WiFi).
+Finally, the Physical Layer sends the bits through physical media, like cables or Wi-Fi signals.
+
+Once it reaches the destination, the process is reversed, and the email is reconstructed on the receiving device, eventually reaching the email application.
+
+
+
+
+
+
