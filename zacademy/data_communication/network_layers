@@ -21,6 +21,13 @@ Physical layer -> lowest level -> Resposible for transmitting indivisual bits fr
 5. Protocols: DSL , 10Base_T
 
 Data link layer -> Responsible fon transmitting frames from one node to another -> works with various types of links (wired LANs/WANs, wireless LANs/WANs)
+1. Frames
+2. Physical adress
+3. Flow control (hop to hop)
+4. Error control (hop to hop)
+5. Congestion control
+6. Access control
+7. Protocols: Ethernet , WiFi
 
 
 According to OSI Model
