@@ -1,7 +1,5 @@
 /*
 cycleDirectedGraph2
-
-
 6 7
 0 1
 1 2
