@@ -49,7 +49,6 @@ struct node {
     int x, y, level;
 };
 
-
  int n, m, r, c;
 
 int mv[4][2] = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
