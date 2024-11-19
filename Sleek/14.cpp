@@ -9,8 +9,6 @@ Inputs to be taken:
 Number of fishing spots 
 Position of the gates 
 Number of fishermen at each gates 
-
-
 1 
 10
 4 5
