@@ -7,7 +7,6 @@ contaminated if you are not in the adjacent four directions. as the below shows 
 contamination process in seconds and you can figure out that the whole city is contaminated in 8 seconds.
 In order to protect the city from the epidemic, create a program that figures out when the city will be contaminated by the bomb for the last.
 
-
 Input
 2
 8 7
