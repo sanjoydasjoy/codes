@@ -54,7 +54,6 @@ struct node {
 
 int mv[4][2] = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
 
-
 bool isValid(int i, int j) {
     return (i >= 0 && i < m && j >= 0 && j < n);
 }
