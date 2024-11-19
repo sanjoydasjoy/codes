@@ -11,7 +11,7 @@ Your program only have to report the distance of a (the) shortest path.
 
 Constraints
 
-]
+
 5≤N≤10. Each location (x,y) is in a bounded grid, 0≤x≤100, 0≤y≤100, and x, y are integers.
 
 3
