@@ -84,7 +84,6 @@ int laughingGas(vector<vector<int> > a)
                 }
             }
         }
-
         return tml;
 }
 
