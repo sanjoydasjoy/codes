@@ -81,5 +81,5 @@ int main() {
         cout << "#" << i + 1 << " " << ans << endl;
     }
 
-    return 0;
+
 }
