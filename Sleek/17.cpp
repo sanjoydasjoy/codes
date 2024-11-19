@@ -39,7 +39,6 @@ Case #2
 21
 */
 
-
 #include <iostream>
 #include <queue>
 #include <vector>
