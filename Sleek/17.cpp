@@ -84,6 +84,7 @@ int laughingGas(vector<vector<int> > a)
         return tml;
 }
 
+
 int main() {
     int T;
     cin >> T;
