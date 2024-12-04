@@ -12,7 +12,7 @@ int counter = 0;
 bool flag[2] = {false, false};
 int turn = 0;
 
-void producer(int producer_id, int produce_count)
+void producer(int produce_count)
 {
     int i = 0; // Producer's index
     int j = 1; // Consumer's index
@@ -30,11 +30,11 @@ void producer(int producer_id, int produce_count)
             in = (in + 1) % BUFFER_SIZE;
             /*circular indexing*/
             counter++;
-            std::cout << "Producer " << producer_id << " produced item. Buffer count: " << counter << std::endl;
+            std::cout << "Producer produced an item. Buffer count: " << counter << std::endl;
         }
         else
         {
-            std::cout << "Producer " << producer_id << " waiting. Buffer is full.\n";
+            std::cout << "Producer is waiting. Buffer is full.\n";
         }
 
         flag[i] = false;
@@ -42,7 +42,7 @@ void producer(int producer_id, int produce_count)
     }
 }
 
-void consumer(int consumer_id, int consume_count)
+void consumer(int consume_count)
 {
     int i = 1; // Consumer's index
     int j = 0; // Producer's index
@@ -59,11 +59,11 @@ void consumer(int consumer_id, int consume_count)
             int item = buffer[out];
             out = (out + 1) % BUFFER_SIZE;
             counter--;
-            std::cout << "Consumer " << consumer_id << " consumed item " << item << ". Buffer count: " << counter << std::endl;
+            std::cout << "Consumer consumed an item " << item << ". Buffer count: " << counter << std::endl;
         }
         else
         {
-            std::cout << "Consumer " << consumer_id << " waiting. Buffer is empty.\n";
+            std::cout << "Consumer is waiting. Buffer is empty.\n";
         }
 
         flag[i] = false;
@@ -73,8 +73,8 @@ void consumer(int consumer_id, int consume_count)
 
 int main()
 {
-    std::thread prod(producer, 1, 10);
-    std::thread cons(consumer, 1, 10);
+    std::thread prod(producer, 10);
+    std::thread cons(consumer, 10);
     prod.join();
     cons.join();
     std::cout << "Producer-Consumer with Bounded Buffer Scheme completed." << std::endl;
