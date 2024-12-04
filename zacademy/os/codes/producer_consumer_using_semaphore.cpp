@@ -1,78 +1,110 @@
 #include <iostream>
-#include <thread>
 #include <mutex>
-#include <semaphore.h>
-#include <vector>
-#include <unistd.h>
+#include <thread>
+#include <condition_variable>
+#include <chrono>
 
 using namespace std;
 
-const int BUFFER_SIZE = 5;
+struct BinarySemaphore
+{
+  mutex mtx;
+  condition_variable cv;
+  bool flag;
 
-// Shared buffer and control variables
-vector<int> buffer(BUFFER_SIZE);
+  BinarySemaphore() : flag(false) {}
+
+  void acquire()
+  {
+    unique_lock<mutex> lock(mtx);
+    while (flag)
+    {
+      cv.wait(lock);
+    }
+    flag = true;
+  }
+
+  void release()
+  {
+    lock_guard<mutex> lock(mtx);
+    flag = false;
+    cv.notify_one();
+  }
+};
+
+BinarySemaphore semaphore;
+
+const int BUFFER_SIZE = 5;
+int buffer[BUFFER_SIZE];
 int in = 0;
 int out = 0;
+int counter = 0;
 
-// Renamed semaphores to avoid naming conflicts
-sem_t empty_slots;
-sem_t full_slots;
-mutex mtx;
-
-// Producer function to add items to the buffer
-void produce(int item) {
-    sem_wait(&empty_slots); // Wait for an empty slot
-    mtx.lock();
-    buffer[in] = item;
-    cout << "Producer Produced item no. : " << item << endl;
-    in = (in + 1) % BUFFER_SIZE; // Circular buffer
-    mtx.unlock();
-    sem_post(&full_slots); // Signal a full slot
-}
-
-// Consumer function to remove items from the buffer
-void consume() {
-    sem_wait(&full_slots); // Wait for a full slot
-    mtx.lock();
-    int item = buffer[out];
-    cout << "Consumer Consumed item no. : " << item << endl;
-    out = (out + 1) % BUFFER_SIZE; // Circular buffer
-    mtx.unlock();
-    sem_post(&empty_slots); // Signal an empty slot
-}
-
-// Producer thread function
-void producer() {
-    for (int i = 0; i < 5; ++i) {
-        produce(i);
-        sleep(1); // Simulate production time
+void producer(int produce_count)
+{
+  for (int i = 1; i <= produce_count; ++i)
+  {
+    int item = i;
+    while (true)
+    {
+      semaphore.acquire();
+      if (counter < BUFFER_SIZE)
+      {
+        buffer[in] = item;
+        in = (in + 1) % BUFFER_SIZE;
+        counter++;
+        cout<<"Producer produced an item "<< item<<". Buffer count: "<<counter<<endl;
+        semaphore.release();
+        break;
+      }
+      else
+      {
+        cout << "Buffer is full. Producer is waiting"<<endl;
+        semaphore.release();
+        this_thread::sleep_for(chrono::milliseconds(10));
+      }
     }
+    this_thread::sleep_for(chrono::milliseconds(100));
+  }
 }
 
-// Consumer thread function
-void consumer() {
-    for (int i = 0; i < 5; ++i) {
-        consume();
-        sleep(2); // Simulate consumption time
+void consumer(int consume_count)
+{
+  for (int i = 1; i <= consume_count; ++i)
+  {
+    int item;
+    while (true)
+    {
+      semaphore.acquire();
+      if (counter > 0)
+      {
+        item = buffer[out];
+        out = (out + 1) % BUFFER_SIZE;
+        counter--;
+        cout<<"Consumer consumed an item "<<item<<". Buffer count: "<<counter<<endl;
+        semaphore.release();
+        break;
+      }
+      else
+      {
+        cout << "Buffer is empty. Consumer is waiting " << endl;
+        semaphore.release();
+        this_thread::sleep_for(chrono::milliseconds(10));
+      }
     }
+    this_thread::sleep_for(chrono::milliseconds(150));
+  }
 }
 
-int main() {
-    // Initialize semaphores
-    sem_init(&empty_slots, 0, BUFFER_SIZE);
-    sem_init(&full_slots, 0, 0);
+int main()
+{
+  thread prod1(producer, 10);
+  thread cons1(consumer, 10);
 
-    // Create threads
-    thread producer_thread(producer);
-    thread consumer_thread(consumer);
+  prod1.join();
+  cons1.join();
 
-    // Wait for threads to complete
-    producer_thread.join();
-    consumer_thread.join();
+  cout << "Producer-Consumer with Bounded Buffer Scheme completed." << endl;
 
-    // Destroy semaphores
-    sem_destroy(&empty_slots);
-    sem_destroy(&full_slots);
-
-    return 0;
+  return 0;
 }
