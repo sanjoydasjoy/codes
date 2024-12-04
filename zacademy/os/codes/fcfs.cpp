@@ -70,7 +70,7 @@ int main()
          << '\t' << "Burst Time"
          << '\t' << "Waiting Time"
          << '\t' << "Turnaround Time" << endl;
-    cout << "-----------------------------------------------------------------------\n";
+    cout << "---------------------------------\n";
 
     for (auto &p : processes)
     {
