@@ -75,7 +75,7 @@ void calculateWaitingTime(struct Process processes[], int n)
         processes[i].waiting_time = processes[i].turnaround_time - processes[i].burst_time;
         if (processes[i].waiting_time < 0)
         {
-            processes[i].waiting_time = 0; // Waiting time cannot be negative
+            processes[i].waiting_time = 0; 
         }
     }
 }
