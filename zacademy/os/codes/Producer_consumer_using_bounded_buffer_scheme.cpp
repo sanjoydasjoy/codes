@@ -14,8 +14,9 @@ int turn = 0;
 
 void producer(int producer_id, int produce_count)
 {
-    int i = 0;
-    int j = 1;
+    int i = 0; // Producer's index
+    int j = 1; // Consumer's index
+
     while (produce_count--)
     {
         flag[i] = true;
@@ -27,6 +28,7 @@ void producer(int producer_id, int produce_count)
         {
             buffer[in] = 1;
             in = (in + 1) % BUFFER_SIZE;
+            /*circular indexing*/
             counter++;
             std::cout << "Producer " << producer_id << " produced item. Buffer count: " << counter << std::endl;
         }
@@ -42,8 +44,9 @@ void producer(int producer_id, int produce_count)
 
 void consumer(int consumer_id, int consume_count)
 {
-    int i = 1;
-    int j = 0;
+    int i = 1; // Consumer's index
+    int j = 0; // Producer's index
+
     while (consume_count--)
     {
         flag[i] = true;
@@ -77,3 +80,7 @@ int main()
     std::cout << "Producer-Consumer with Bounded Buffer Scheme completed." << std::endl;
     return 0;
 }
+
+/*
+g++ Producer_consumer_using_bounded_buffer_scheme.cpp -o p
+*/
