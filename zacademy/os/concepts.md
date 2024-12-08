@@ -33,6 +33,7 @@ A Process Control Block (PCB) also known as a Task Control Block, contains infor
 	• Accounting Info: CPU time used, time limits 
     • I/O Status: Devices and open files allocated to the process
 
+ <br><br>
 ## Process Scheduling <br>
 
 Process Scheduling aims to maximize CPU usage by efficiently switching processes for time-sharing.  <br>
@@ -43,7 +44,7 @@ Schedulers: <br>
 	• Medium-term Scheduling: Removes processes from memory (swapping) when the degree of multiprogramming needs to decrease.
 
 
-
+ <br><br>
 ## Context Switch <br>
 	• When CPU switches to another process, the system must save the state of the old process
 	• and load the saved state for the new process via a context switch
@@ -52,7 +53,7 @@ Schedulers: <br>
 ● Context-switch time is overhead; the system does no useful work <br>
 ● While switching, the more complex the OS and the PCB  the longer the context switch <br>
 
-
+ <br><br>
 ## Interprocess Communication
 Interprocess Communication (IPC) is a mechanism that allows processes to communicate with each other within a system <br>
 Types of Processes: <br>
