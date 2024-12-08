@@ -11,7 +11,7 @@ the OS helps you open the video player, find the movie file, and run the app. Th
 
 ## System call vs System program <br> 
 <img src="chapters/pics/system_call_system_program.png" alt="Four Components of OS" width="600"> 
-<img src="chapters/pics/call_program.png" alt="Four Components of OS" width=450"> <br><br>
+<img src="chapters/pics/call_program.png" alt="Four Components of OS" width=350"> <br><br>
 
 
 
