@@ -19,7 +19,7 @@ the OS helps you open the video player, find the movie file, and run the app. Th
 ● Program becomes process when executable file loaded into memory <br><br>
 ● Process State <br>
     ● new ● running ● waiting ● ready ● terminated <br><br>
-<img src="chapters/pics/process_state.png" alt="Four Components of OS" width="500"> <br>
+<img src="chapters/pics/process_state.png" alt="Four Components of OS" width="500"> <br> <br>
 
 
 ## Process Control Block (PCB) <br>
@@ -31,8 +31,15 @@ A Process Control Block (PCB) also known as a Task Control Block, contains infor
 	• Scheduling Info: Priority, queue pointers <br>
 	• Memory Info: Allocated memory <br>
 	• Accounting Info: CPU time used, time limits <br>
-    • I/O Status: Devices and open files allocated to the process <br>
+    • I/O Status: Devices and open files allocated to the process <br><br>
 
+## Process Scheduling <br>
+
+Process Scheduling aims to maximize CPU usage by efficiently switching processes for time-sharing.  <br>
+Schedulers: <br>
+	• Short-term Scheduler (CPU Scheduler): Selects the next process for CPU execution, invoked frequently (milliseconds). <br>
+	• Long-term Scheduler (Job Scheduler): Selects processes for the ready queue, invoked infrequently (seconds, minutes), controls multiprogramming degree.<br>
+	• Medium-term Scheduling: Removes processes from memory (swapping) when the degree of multiprogramming needs to decrease.<br><br>
 
 
 
