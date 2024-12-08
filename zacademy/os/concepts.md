@@ -25,21 +25,22 @@ the OS helps you open the video player, find the movie file, and run the app. Th
 ## Process Control Block (PCB) <br>
 A Process Control Block (PCB) also known as a Task Control Block, contains information about each process: <br>
 
-	• Process State: Current status (running, waiting, etc.) <br>
-	• Program Counter: Address of the next instruction to execute <br>
-	• CPU Registers: Contents of process-specific registers <br>
-	• Scheduling Info: Priority, queue pointers <br>
-	• Memory Info: Allocated memory <br>
-	• Accounting Info: CPU time used, time limits <br>
-    • I/O Status: Devices and open files allocated to the process <br><br>
+	• Process State: Current status (running, waiting, etc.) 
+	• Program Counter: Address of the next instruction to execute 
+	• CPU Registers: Contents of process-specific registers 
+	• Scheduling Info: Priority, queue pointers 
+	• Memory Info: Allocated memory 
+	• Accounting Info: CPU time used, time limits 
+    • I/O Status: Devices and open files allocated to the process
 
 ## Process Scheduling <br>
 
 Process Scheduling aims to maximize CPU usage by efficiently switching processes for time-sharing.  <br>
 Schedulers: <br>
-	• Short-term Scheduler (CPU Scheduler): Selects the next process for CPU execution, invoked frequently (milliseconds). <br>
-	• Long-term Scheduler (Job Scheduler): Selects processes for the ready queue, invoked infrequently (seconds, minutes), controls multiprogramming degree.<br>
-	• Medium-term Scheduling: Removes processes from memory (swapping) when the degree of multiprogramming needs to decrease.<br><br>
+
+	• Short-term Scheduler (CPU Scheduler): Selects the next process for CPU execution, invoked frequently (milliseconds). 
+	• Long-term Scheduler (Job Scheduler): Selects processes for the ready queue, invoked infrequently (seconds, minutes), controls multiprogramming degree.
+	• Medium-term Scheduling: Removes processes from memory (swapping) when the degree of multiprogramming needs to decrease.
 
 
 
