@@ -1,5 +1,5 @@
 ## What is an Operating System? <br>
-A program that acts as an intermediary between a user of a computer and the computer hardware <br><br>
+● A program that acts as an intermediary between a user of a computer and the computer hardware <br><br>
 <img src="chapters/pics/four_components_os.png" alt="Four Components of OS" width="350"> <br><br>
 
 ## Operating System vs Kernel <br>
@@ -12,6 +12,14 @@ the OS helps you open the video player, find the movie file, and run the app. Th
 ## System call vs System program <br> 
 <img src="chapters/pics/system_call_system_program.png" alt="Four Components of OS" width="600"> 
 <img src="chapters/pics/call_program.png" alt="Four Components of OS" width=350"> <br><br>
+
+## Process <br> 
+● Process -  a program in execution <br>
+● Program is passive entity stored on disk (executable file), process is active <br>
+● Program becomes process when executable file loaded into memory <br><br>
+● Process State
+    ● new ● running ● waiting ● ready ● terminated <br>
+<img src="chapters/pics/process_state.png" alt="Four Components of OS" width="500"> <br>
 
 
 
