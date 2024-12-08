@@ -17,9 +17,22 @@ the OS helps you open the video player, find the movie file, and run the app. Th
 ● Process -  a program in execution <br>
 ● Program is passive entity stored on disk (executable file), process is active <br>
 ● Program becomes process when executable file loaded into memory <br><br>
-● Process State
-    ● new ● running ● waiting ● ready ● terminated <br>
+● Process State <br>
+    ● new ● running ● waiting ● ready ● terminated <br><br>
 <img src="chapters/pics/process_state.png" alt="Four Components of OS" width="500"> <br>
+
+
+## Process Control Block (PCB) <br>
+A Process Control Block (PCB) also known as a Task Control Block, contains information about each process: <br>
+
+	• Process State: Current status (running, waiting, etc.) <br>
+	• Program Counter: Address of the next instruction to execute <br>
+	• CPU Registers: Contents of process-specific registers <br>
+	• Scheduling Info: Priority, queue pointers <br>
+	• Memory Info: Allocated memory <br>
+	• Accounting Info: CPU time used, time limits <br>
+    • I/O Status: Devices and open files allocated to the process <br>
+
 
 
 
