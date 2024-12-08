@@ -11,7 +11,7 @@ the OS helps you open the video player, find the movie file, and run the app. Th
 
 ## System call vs System program <br> 
 <img src="chapters/pics/system_call_system_program.png" alt="Four Components of OS" width="600"> 
-<img src="chapters/pics/call_program.png" alt="Four Components of OS" width=350"> <br><br>
+<img src="chapters/pics/call_program.png" alt="Four Components of OS" width=400"> <br><br>
 
 ## Process <br> 
 ● Process -  a program in execution <br>
@@ -44,8 +44,35 @@ Schedulers: <br>
 
 
 
+## Context Switch <br>
+	• When CPU switches to another process, the system must save the state of the old process
+	• and load the saved state for the new process via a context switch
+ 
+● Context of a process represented in the PCB <br>
+● Context-switch time is overhead; the system does no useful work <br>
+● While switching, the more complex the OS and the PCB  the longer the context switch <br>
 
 
+## Interprocess Communication
+Interprocess Communication (IPC) is a mechanism that allows processes to communicate with each other within a system <br>
+Types of Processes: <br>
+
+	• Independent Processes: These processes do not interact with other processes.
+	• Cooperating Processes: These processes can affect or be affected by other processes. They typically share data or perform tasks collaboratively.
+
+Advantages of process cooperation / cooperating Processes / IPC:  <br>
+
+	1. Information Sharing
+	2. Computation Speedup
+	3. Modularity: enhancing code reusability.
+	4. Convenience: Cooperation between processes makes it easier to manage complex tasks.
+
+
+● Cooperating processes need interprocess communication (IPC) <br>
+● Two models of IPC ● Shared memory ● Message passing <br>
+
+<img src="chapters/pics/ipc.png" alt="Four Components of OS" width="500"> 
+<img src="chapters/pics/ipc2.png" alt="Four Components of OS" width="500"> <br> <br>
 
 
 
