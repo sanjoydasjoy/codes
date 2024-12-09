@@ -95,6 +95,7 @@ Key Characteristics: <br>
 	Fixed Priority: Higher priority for foreground; can lead to background process starvation.
 	Time Slice: CPU time divided among queues (e.g., 80% for foreground, 20% for background).
 
+<br><br>
 ## Multilevel Feedback Queue
 Definition: An advanced version of the multilevel queue where processes can move between queues based on their behavior and requirements. Aging can be used to prevent starvation. <br>
 
@@ -108,4 +109,4 @@ Key Characteristics: <br>
 	Flexible and adaptive, ensuring a balance between CPU and I/O-bound processes.
 
 
- <img src="chapters/pics/multilevel.jpg" alt="Four Components of OS" width="500"> <br> <br>
+ <img src="chapters/pics/multilevel.jpg" alt="Four Components of OS" width="400"> <br> <br>
