@@ -45,7 +45,27 @@ Disadvantages: <br>
 
 	• Not Optimal for Time Sharing: Can lead to poor performance in interactive systems where response time is critical. <br>
  
-    • Convoy Effect: A single slow process can delay all other processes behind it, known as the "convoy effect.
+    	• Convoy Effect: A single slow process can delay all other processes behind it, known as the "convoy effect.
 
 
 <br><br>
+
+
+## SJF
+
+Shortest-Job-First (SJF) Scheduling is a process scheduling methodology used in computing environments. <br>
+It selects the process that has the smallest execution time remaining, and runs it next. <br>
+
+
+This approach optimizes the overall time required for executing all processes by minimizing the average waiting time for all processes. <br>
+
+Disadvantages of SJF Scheduling: <br>
+
+	Starvation: Longer processes may never execute if shorter processes keep arriving. This issue, known as starvation, is a significant drawback in environments where process times vary greatly.
+
+
+	Problem ≡ Starvation – low priority processes may never execute 
+
+	Solution ≡ Aging – as time progresses increase the priority of the process
+
+ <br><br>
