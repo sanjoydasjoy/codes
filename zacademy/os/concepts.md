@@ -73,7 +73,7 @@ Advantages of process cooperation / cooperating Processes / IPC:  <br>
 ● Two models of IPC ● Shared memory ● Message passing <br>
 
 <img src="chapters/pics/ipc.png" alt="Four Components of OS" width="500"> 
-<img src="chapters/pics/ipc2.png" alt="Four Components of OS" width="500"> 
+<img src="chapters/pics/ipc2.png" alt="Four Components of OS" width="400"> 
 
 
 <br> <br>
@@ -83,15 +83,17 @@ Advantages of process cooperation / cooperating Processes / IPC:  <br>
 	● Remote Procedure Calls
 	● Pipes
 	● Remote Method Invocation (Java)
-
+<br><br>
  ● **Sockets (&ports)**  <br>
  
 	● A socket is defined as an endpoint for communication
  	● Three types of sockets: 
   
-  		1. Connection-oriented (TCP): Reliable, ordered, but slower. Used for web browsing or file downloads where accuracy is essential. Like making a phone call—first (Voice Calls), you dial (establish a connection), then talk (send data), and when done, you hang up (close the connection). It's reliable but has more overhead. 
+  		1. Connection-oriented (TCP): Reliable, ordered, but slower. Used for web browsing or file downloads where accuracy is essential.
+    			Like making a phone call—first (Voice Calls), you dial (establish a connection), then talk (send data), and when done, you hang up (close the connection). It's reliable but has more overhead. 
     
-		2. Connectionless (UDP): Faster, less reliable, and unordered. Ideal for video streaming, online gaming, where slight data loss is acceptable for real-time performance. The video stream starts transmitting immediately, without waiting for a formal connection to be established. This makes the start time faster. Like when we watch a video On-Demand Streaming (youTube, netflix), that is pre-recorded and stored on a server, we can pause, fast forward the video. Or Live Streaming (twitch, facebook Live, sports events, live video call  (real-time voice communication (like in Skype, WhatsApp, or Zoom calls)): This is real-time transmission of video content, typically not stored permanently. The content is broadcast as it's being recorded. 
+		2. Connectionless (UDP): Faster, less reliable, and unordered. Ideal for video streaming, online gaming, where slight data loss is acceptable for real-time performance. The video stream starts transmitting immediately, without waiting for a formal connection to be established. This makes the start time faster. 
+  			Like when we watch a video On-Demand Streaming (youTube, netflix), that is pre-recorded and stored on a server, we can pause, fast forward the video. Or Live Streaming (twitch, facebook Live, sports events, live video call  (real-time voice communication (like in Skype, WhatsApp, or Zoom calls)): This is real-time transmission of video content, typically not stored permanently. The content is broadcast as it's being recorded. 
 
 		3.MulticastSocket (class): Extends the DatagramSocket class to support multicast (sending data to multiple recipients simultaneously). Used for group communication where data is sent to a multicast group address. Example: Live video broadcasts, stock market updates.
 
@@ -118,16 +120,18 @@ Advantages of process cooperation / cooperating Processes / IPC:  <br>
 
 
 
-
+<br><br>
  ● **Remote Procedure Call (RPC)** <br>
  
- 	In operating systems allows programs to run functions on other computers as if they were on the same machine <br>
+ 	● In operating systems allows programs to run functions on other computers as if they were on the same machine <br>
 
-
+<br><br>
  ● **Pipes** <br>
  
 	● Pipes act as conduits(channel) for inter-process communication (IPC).
 	● Unidirectional or bidirectional communication.
 	● For bidirectional: half-duplex (one direction at a time) or full-duplex (simultaneous both directions).
 
-	● Ordinary pipes are limited to unidirectional parent-child communication, while Named pipes offer bidirectional, more flexible, and multi-process communication, no parent-child relationship needed.
+	● Ordinary pipes are limited to unidirectional parent-child communication, 
+        ● While Named pipes offer bidirectional, more flexible, and multi-process communication, no parent-child relationship needed.
+<br><br>
