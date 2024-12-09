@@ -134,18 +134,22 @@ Advantages of process cooperation / cooperating Processes / IPC:  <br>
 
 	● Ordinary pipes are limited to unidirectional parent-child communication
 	● While Named pipes offer bidirectional, more flexible, and multi-process communication, no parent-child relationship needed.
-<br><br><br>
+<br><br><br><br>
 
-## Thread / MultiThread
+## Thread / MultiThread / Multicore
 A thread, often called a lightweight process, is the basic unit of CPU utilization <br>
 
 **Multithreading:** Multithreading is the capability of an operating system to support multiple, concurrent paths of execution within a single process. <br>
 Key Features of Multithreading: <br>
-	1. Shared Resources: Threads within the same process share the same memory space and resources, such as files and data buffers, making inter-thread communication more straightforward and faster than inter-process communication. <br>
-	2. Context Switching: Switching between threads is typically faster than switching between processes. Context switches among threads involve less overhead than between processes because threads share the same memory and resources. <br>
 
-<br><br>
-## Multicore
+	1. Shared Resources: Threads within the same process share the same memory space and resources, such as files and data buffers, 
+ 			     making inter-thread communication more straightforward and faster than inter-process communication. <br>
+ 
+	2. Context Switching: Switching between threads is typically faster than switching between processes. 
+ 			      Context switches among threads involve less overhead than between processes because threads share the same memory and resources. 
+
+<br><br><br><br>
+**Multicore**
 A multicore system has a single processor with multiple execution units called cores, while a multiprocessor system has two or more processors. <br>
 
 Key Concepts:<br>
@@ -163,5 +167,47 @@ Key Concepts:<br>
 	Parallelism is the simultaneous execution of multiple tasks.
 	While this can’t be done by using a single processing unit. it needs multiple processing units.
 
+
+<br><br><br><br>
+
+**Multithreading Models** <br>
+
+
+	• Many-to-One Model: Multiple user-level threads are mapped to a single kernel-level thread. This approach is simple but can lead to poor performance if a user thread blocks, as it blocks the entire process.
+
+	• One-to-One Model: Each user-level thread corresponds to a separate kernel-level thread. This model provides better concurrency as blocking one thread doesn't affect others, but it can be resource-intensive due to the overhead of managing multiple kernel-level threads.
+
+	• Many-to-Many Model: Many user-level threads are multiplexed to a smaller or equal number of kernel-level threads, providing flexibility and a balance between concurrency and resource utilization.
+
+
+<br><br><br><br>
+
+**Implicit Threading**  <br>
+
+Implicit threading refers to a technique where the creation and management of threads are handled automatically by compilers and runtime libraries rather than programmers. <br>
+
+
+Three methods explored <br>
+
+	● Thread Pools 
+	● OpenMP 
+	● Grand Central Dispatch
+
+	1. A thread pool is a collection of pre-created threads that are ready to perform tasks. When a new task arrives, it is assigned to an available thread from the pool, which reduces the time and resources needed compared to creating a new thread each time.
+
+	   Advantages:
+	   Performance Efficiency:
+	   Reduced Overhead: It is usually faster to service a request using an existing thread from the pool rather than creating a new
+	   		     thread each time a task needs to be performed. This reduces the overhead associated with thread creation and destruction.
+
+
+
+	2. OpenMP is a tool that helps programs run faster by doing several tasks at once. It works with languages like C, C++, and FORTRAN to make it easier for programmers to write code that can handle multiple tasks simultaneously on multi-core computers.
+
+
+
+
+	3. Grand Central Dispatch (GCD) is a feature from Apple that helps apps run faster by managing tasks in the background.
+			Grand Central Dispatch (GCD) in Apple's operating systems uses two main types of queues to manage how tasks (or blocks of code) are executed in an application:
 
 
