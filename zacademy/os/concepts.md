@@ -134,4 +134,34 @@ Advantages of process cooperation / cooperating Processes / IPC:  <br>
 
 	● Ordinary pipes are limited to unidirectional parent-child communication
 	● While Named pipes offer bidirectional, more flexible, and multi-process communication, no parent-child relationship needed.
+<br><br><br>
+
+## Thread / MultiThread
+A thread, often called a lightweight process, is the basic unit of CPU utilization <br>
+
+**Multithreading:** Multithreading is the capability of an operating system to support multiple, concurrent paths of execution within a single process. <br>
+Key Features of Multithreading: <br>
+	1. Shared Resources: Threads within the same process share the same memory space and resources, such as files and data buffers, making inter-thread communication more straightforward and faster than inter-process communication. <br>
+	2. Context Switching: Switching between threads is typically faster than switching between processes. Context switches among threads involve less overhead than between processes because threads share the same memory and resources. <br>
+
 <br><br>
+## Multicore
+A multicore system has a single processor with multiple execution units called cores, while a multiprocessor system has two or more processors. <br>
+
+Key Concepts:<br>
+1. Concurrency <br>
+2. Parallelism <br>
+
+**Difference between Concurrency and Parallelism** <br>
+
+	Concurrency is the ability of a system to handle multiple tasks at the same time. 
+ 	These tasks might not actually run simultaneously; instead, they can be interleaved, 
+  	meaning the system can switch between tasks quickly, giving the illusion of parallelism. 
+	Concurrency can be done by using a single processing unit.
+
+
+	Parallelism is the simultaneous execution of multiple tasks.
+	While this can’t be done by using a single processing unit. it needs multiple processing units.
+
+
+
