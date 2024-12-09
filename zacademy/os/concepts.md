@@ -95,7 +95,7 @@ Advantages of process cooperation / cooperating Processes / IPC:  <br>
 		2. Connectionless (UDP): Faster, less reliable, and unordered. Ideal for video streaming, online gaming, where slight data loss is acceptable for real-time performance. The video stream starts transmitting immediately, without waiting for a formal connection to be established. This makes the start time faster. 
   			Like when we watch a video On-Demand Streaming (youTube, netflix), that is pre-recorded and stored on a server, we can pause, fast forward the video. Or Live Streaming (twitch, facebook Live, sports events, live video call  (real-time voice communication (like in Skype, WhatsApp, or Zoom calls)): This is real-time transmission of video content, typically not stored permanently. The content is broadcast as it's being recorded. 
 
-		3.MulticastSocket (class): Extends the DatagramSocket class to support multicast (sending data to multiple recipients simultaneously). Used for group communication where data is sent to a multicast group address. Example: Live video broadcasts, stock market updates.
+		3. MulticastSocket (class): Extends the DatagramSocket class to support multicast (sending data to multiple recipients simultaneously). Used for group communication where data is sent to a multicast group address. Example: Live video broadcasts, stock market updates.
 
 
 
@@ -132,6 +132,6 @@ Advantages of process cooperation / cooperating Processes / IPC:  <br>
 	● Unidirectional or bidirectional communication.
 	● For bidirectional: half-duplex (one direction at a time) or full-duplex (simultaneous both directions).
 
-	● Ordinary pipes are limited to unidirectional parent-child communication, 
-        ● While Named pipes offer bidirectional, more flexible, and multi-process communication, no parent-child relationship needed.
+	● Ordinary pipes are limited to unidirectional parent-child communication
+	● While Named pipes offer bidirectional, more flexible, and multi-process communication, no parent-child relationship needed.
 <br><br>
