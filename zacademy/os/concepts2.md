@@ -2,6 +2,7 @@
 
 The dispatcher is a component of the operating system that switches control from the OS to a user process. <br>
 
+
 The key functions of the dispatcher include: <br>
 
     1.Context Switching: Saving the state of the currently running process and loading the state of the next scheduled process.
