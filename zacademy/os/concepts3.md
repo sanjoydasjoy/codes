@@ -3,6 +3,8 @@
 
  <img src="chapters/pics/bounded_buffer.jpg" alt="Four Components of OS" width="400"> <br> <br>
 
+  <img src="chapters/pics/bounded_buffer.jpg" alt="Four Components of OS" width="400"> <br> <br>
+
 <br><br>
 
 ## FCFS
