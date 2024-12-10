@@ -1,7 +1,7 @@
 ## Classical Problems of Synchronization
 
 
- <img src="chapters/pics/png" alt="Four Components of OS" width="400"> <br> <br>
+ <img src="chapters/pics/bounded_buffer.png" alt="Four Components of OS" width="400"> <br> <br>
 
   <img src="chapters/pics/bounded_buffer2.png" alt="Four Components of OS" width="400"> <br> <br>
 
