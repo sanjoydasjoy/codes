@@ -15,10 +15,6 @@
 <br><br>
 
 
-## SJF
-
-Shortest-Job-First (SJF) Scheduling is a process scheduling methodology used in computing environments. <br>
-It selects the process that has the smallest execution time remaining, and runs it next. <br>
 
 
 This approach optimizes the overall time required for executing all processes by minimizing the average waiting time for all processes. <br>
