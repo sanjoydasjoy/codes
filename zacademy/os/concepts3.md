@@ -16,9 +16,7 @@
 
 
 
-This approach optimizes the overall time required for executing all processes by minimizing the average waiting time for all processes. <br>
 
-Disadvantages of SJF Scheduling: <br>
 
 	Starvation: Longer processes may never execute if shorter processes keep arriving. This issue, known as starvation, is a significant drawback in environments where process times vary greatly.
 
