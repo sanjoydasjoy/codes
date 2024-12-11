@@ -15,19 +15,6 @@
 
 
 
-
-
-
-
- <br><br>
-
-## Priority-based scheduling algorithm
-
-
-less value high priority <br>
-
- <br><br>
-## Round Robin 
 Round Robin (RR) is a CPU scheduling method where each process gets a fixed time (quantum), typically 10-100 milliseconds. After its time ends, it goes to the end of the queue. The performance depends on the size of the quantum: a large quantum makes RR similar to FIFO, while a very small one can cause high overhead due to frequent switching between processes.
 
  <br><br>
