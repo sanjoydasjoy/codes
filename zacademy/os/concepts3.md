@@ -9,20 +9,6 @@
 
 <br><br>
 
-## FCFS
-
-FCFS stands for "First-Come, First-Served." It's a simple scheduling algorithm. <br>
-
-
-FCFS schedules tasks in the order that they arrive or request service. <br>
-The first task to arrive is the first to be served, and so forth, much like customers lining up at a checkout. <br>
-Each task waits until the one in front of it gets completed. <br>
-
-Key Features:
-
-    	1. Non-preemptive: Once a process starts running, it continues until it finishes. There are no interruptions.
-    	2. Simple to Implement: FCFS is straightforward because it requires minimal tracking—just the order of arrival.
-    	3. Fair in Order: Every process gets a chance to execute in the exact order they arrive.
 
 
 Disadvantages: <br>
