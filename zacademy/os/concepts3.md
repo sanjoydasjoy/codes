@@ -11,12 +11,6 @@
 
 
 
-Disadvantages: <br>
-
-	• Not Optimal for Time Sharing: Can lead to poor performance in interactive systems where response time is critical. <br>
- 
-    	• Convoy Effect: A single slow process can delay all other processes behind it, known as the "convoy effect.
-
 
 <br><br>
 
