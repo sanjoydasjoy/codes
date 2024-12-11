@@ -18,12 +18,6 @@
 
 
 
-	Starvation: Longer processes may never execute if shorter processes keep arriving. This issue, known as starvation, is a significant drawback in environments where process times vary greatly.
-
-
-	Problem ≡ Starvation – low priority processes may never execute 
-
-	Solution ≡ Aging – as time progresses increase the priority of the process
 
  <br><br>
 
