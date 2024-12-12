@@ -20,11 +20,6 @@ Round Robin (RR) is a CPU scheduling method where each process gets a fixed time
  <br><br>
 
 
-## Multilevel Queue
-
-Definition: The ready queue is divided into multiple fixed queues, each dedicated to a specific type of process (e.g., foreground for interactive processes, background for batch processes). Processes are permanently assigned to one queue based on their type. <br>
-
-Key Characteristics: <br>
 
 	Each queue has its own scheduling algorithm:
 	Foreground: Round Robin (RR)
