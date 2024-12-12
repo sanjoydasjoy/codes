@@ -28,19 +28,3 @@ Round Robin (RR) is a CPU scheduling method where each process gets a fixed time
 	Fixed Priority: Higher priority for foreground; can lead to background process starvation.
 	Time Slice: CPU time divided among queues (e.g., 80% for foreground, 20% for background).
 
-<br><br>
-## Multilevel Feedback Queue
-Definition: An advanced version of the multilevel queue where processes can move between queues based on their behavior and requirements. Aging can be used to prevent starvation. <br>
-
-Key Characteristics: <br>
-
-	Dynamic Movement: Processes may be promoted or demoted across queues.
-	Parameters:
-	Number of queues.
-	Scheduling algorithm for each queue.
-	Criteria for promotion, demotion, and initial queue assignment.
-	Flexible and adaptive, ensuring a balance between CPU and I/O-bound processes.
-
-
- <img src="chapters/pics/multilevel.jpg" alt="Four Components of OS" width="400"> <br> <br>
-
