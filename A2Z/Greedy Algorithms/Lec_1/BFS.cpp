@@ -1,3 +1,6 @@
+// Space Complexity : O(3N) ; 1 for queue, 1 for visited array, 1 for bfs array
+// Time Complexity : O(N) + O(2E) ; first while loop and then in for loop it traverse the total degree
+
 class Solution {
   public:
     
