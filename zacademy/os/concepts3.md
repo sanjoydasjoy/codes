@@ -15,4 +15,6 @@
 
  <img src="chapters/pics/reader_writer1.png" alt="Four Components of OS" width="500"> <br> <br>
 
+ <img src="chapters/pics/reader_writer2.png" alt="Four Components of OS" width="500"> <br> <br>
+
 
