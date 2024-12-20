@@ -18,3 +18,5 @@
  <img src="chapters/pics/reader_writer2.png" alt="Four Components of OS" width="500"> <br> <br>
 
  <img src="chapters/pics/reader_writer3.png" alt="Four Components of OS" width="500"> <br> <br>
+
+**Dining Philosophers Problem** <br><br>
