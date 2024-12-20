@@ -1,5 +1,7 @@
 ## Classical Problems of Synchronization: 
 
+**Bounded-Buffer Problem** <br><br>
+
 
  <img src="chapters/pics/bounded_buffer.png" alt="Four Components of OS" width="500"> <br> <br>
 
@@ -9,7 +11,7 @@
 
 <br><br>
 
-## 
+**The Readers Writers Problem** <br><br>
 
 
 
