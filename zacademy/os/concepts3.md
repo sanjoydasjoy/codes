@@ -13,5 +13,6 @@
 
 **The Readers Writers Problem** <br><br>
 
+ <img src="chapters/pics/reader_writer1.png" alt="Four Components of OS" width="500"> <br> <br>
 
 
