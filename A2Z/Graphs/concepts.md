@@ -5,4 +5,9 @@
 
 3. int vis[n] = {0}; is not considered good practice in modern C++ for the following reasons:
 
-The syntax int vis[n] creates a variable-length array (VLA), which is not part of the C++ standard (post-C++98/03). VLAs are allowed in C99 (a C standard), but in C++, array sizes must be a constant expression that is determined at compile-time.
+  The syntax int vis[n] creates a variable-length array (VLA), which is not part of the C++     
+  standard (post-C++98/03). VLAs are allowed in C99 (a C standard), but in C++, array sizes must 
+  be a constant expression that is determined at compile-time.
+
+4. dfhj
+  
