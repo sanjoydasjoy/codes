@@ -6,6 +6,8 @@
 
 ## Race Condition
 
+<img src="chapters/pics/race_condition.png" alt="Four Components of OS" width="500"> <br> <br>
+
 
 ## Classical Problems of Synchronization: 
 
