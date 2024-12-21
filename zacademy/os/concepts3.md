@@ -15,7 +15,7 @@ It happens when processes do not follow proper synchronization. <br>
 
 ## Critical Section
 
-A critical section in an operating system is a segment of code or a region of a program that accesses shared resources (variables, files, or data structures) and must not be accessed by more than one process at the same time. This is crucial to prevent data inconsistency or race conditions.
+A critical section in an operating system is a segment of code or a region of a program that accesses shared resources (variables, files, or data structures) and must not be accessed by more than one process at the same time. This is crucial to prevent data inconsistency or race conditions. <br>
 Each process must ask permission to enter critical section in entry section, may follow critical section with exit section, then remainder section
 
 
