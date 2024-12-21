@@ -22,3 +22,5 @@
 **Dining Philosophers Problem** <br><br>
 
  <img src="chapters/pics/dining1.png" alt="Four Components of OS" width="500"> <br> <br>
+
+ <img src="chapters/pics/dining2.png" alt="Four Components of OS" width="500"> <br> <br>
