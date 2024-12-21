@@ -22,3 +22,15 @@ class Solution {
         return false;
     }
 };
+
+/*
+Pass the parent node alongside the current node in the DFS call
+If a visited node is encountered and it is not the parent, a cycle exists.
+Traverse all connected components to ensure no cycles are missed in a disconnected graph.
+
+Key condition for cycle detection:
+If a visited node is found (vis[i] == 1) and i != parent, it indicates a cycle.
+*/
+
+
+
