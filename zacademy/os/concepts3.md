@@ -11,7 +11,7 @@ Race Condition: A race condition occurs when two or more processes access a shar
 It happens when processes do not follow proper synchronization. <br>
 
 
-<img src="chapters/pics/race_condition.png" alt="Four Components of OS" width="500"> <br> <br>
+<img src="chapters/pics/race_condition.png" alt="Four Components of OS" width="400"> <br> <br>
 
 
 ## Classical Problems of Synchronization: 
