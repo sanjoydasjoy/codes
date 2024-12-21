@@ -6,6 +6,11 @@
 
 ## Race Condition
 
+Race Condition: A race condition occurs when two or more processes access a shared resource and attempt to modify it simultaneously, leading to unpredictable or incorrect results. <br>
+
+It happens when processes do not follow proper synchronization. <br>
+
+
 <img src="chapters/pics/race_condition.png" alt="Four Components of OS" width="500"> <br> <br>
 
 
