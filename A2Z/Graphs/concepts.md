@@ -8,10 +8,11 @@
    standard (post-C++98/03). VLAs are allowed in C99 (a C standard), but in C++, array sizes must 
    be a constant expression that is determined at compile-time.
 
+   Better Alternative: vector<int> vis(n, 0); 
 
 
-4. 
+
+5. 
 
 
-4. dfhj
   
