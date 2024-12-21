@@ -8,6 +8,7 @@ class Solution {
             }
             else if(parent != i) return true;
         }
+    // all neighbors are explored and no cycle is detected, return false.
         return false;
   }
   public:
