@@ -13,6 +13,7 @@ class Solution {
                   vis[i] = 1;
                   q.push({i,node});
               }
+              // all the adjacency connections of the graph will be covered in the while loop
               else if(parent!=i){
                   return true;
               }
