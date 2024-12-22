@@ -9,6 +9,8 @@ class Solution {
             else if(parent != i) return true;
         }
     // all neighbors are explored and no cycle is detected, return false.
+    // the first time false will return is when there are no unvisited neighbors for a node, 
+    // meaning the recursion reaches a "dead end" in its current path
         return false;
   }
   public:
