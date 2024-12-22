@@ -13,7 +13,7 @@ class Solution {
                   vis[i] = 1;
                   q.push({i,node});
               }
-              else if(vis[i] && parent!=i){
+              else if(parent!=i){
                   return true;
               }
           }
