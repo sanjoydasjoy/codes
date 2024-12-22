@@ -20,6 +20,12 @@ class Solution {
       }
       return false;
   }
+// BFS uses a queue to explore the nodes. 
+// From the initial call, all reachable nodes are visited in one single traversal.
+// BFS only needs to be called ONCE per connected component of the graph.
+
+
+
   public:
     bool isCycle(vector<vector<int>>& adj) {
         int n = adj.size();
