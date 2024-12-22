@@ -9,9 +9,11 @@ class Solution {
           }
           else if(path_tracker[it] == 1) return true;
       }
-      path_tracker[node] = 0;
+      path_tracker[node] = 0; 
       return false;
   }
+// path_tracker[node] = 0; is executed when the DFS finishes exploring all neighbors of the node.
+// 
   public:
     
     bool isCyclic(int V, vector<vector<int>> adj) {
