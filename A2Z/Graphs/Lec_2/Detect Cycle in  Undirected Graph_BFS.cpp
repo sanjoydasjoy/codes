@@ -23,6 +23,7 @@ class Solution {
 // BFS uses a queue to explore the nodes. 
 // From the initial call, all reachable nodes are visited in one single traversal.
 // BFS only needs to be called ONCE per connected component of the graph.
+// For a connected graph, BFS will be called once.
 
 
 
