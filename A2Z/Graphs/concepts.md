@@ -12,7 +12,9 @@
 
 
 
-4. 
+4. BFS - Breadth-First Search, the traversal of the graph proceeds level-by-level starting from a single node.
+
+
 
 
   
