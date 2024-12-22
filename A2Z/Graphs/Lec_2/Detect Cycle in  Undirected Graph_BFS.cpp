@@ -4,7 +4,7 @@ class Solution {
       vis[src] = 1;
       queue<pair<int,int>>q;
       q.push({src,-1});
-      while(!q.empty()){
+      while(!q.empty()){  // all the adjacency connections of the graph will be covered in the while loop
           int node = q.front().first;
           int parent = q.front().second;
           q.pop();
@@ -13,7 +13,6 @@ class Solution {
                   vis[i] = 1;
                   q.push({i,node});
               }
-              // all the adjacency connections of the graph will be covered in the while loop
               else if(parent!=i){
                   return true;
               }
