@@ -13,7 +13,8 @@ class Solution {
       return false;
   }
 // path_tracker[node] = 0; is executed when the DFS finishes exploring all neighbors of the node.
-// 
+// path_tracker[node] = 0; is executed once for each node
+
   public:
     
     bool isCyclic(int V, vector<vector<int>> adj) {
