@@ -11,8 +11,16 @@
    Better Alternative: vector<int> vis(n, 0); 
 
 
+## BFS - Breadth-First Search
+1. the traversal of the graph proceeds level-by-level starting from a single node.
+2. BFS uses a queue to explore the nodes. 
+3. From the initial call, all reachable nodes are visited in one single traversal.
+4. BFS only needs to be called ONCE per connected component of the graph.
+5. For a connected graph, BFS will be called once.
+6. For a disconnected graph, you will start BFS for every unvisited node
+7. all the adjacency connections of the graph will be covered in the while loop
 
-4. BFS - Breadth-First Search, the traversal of the graph proceeds level-by-level starting from a single node.
+
 
 
 
