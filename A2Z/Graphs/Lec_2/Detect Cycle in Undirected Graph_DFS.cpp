@@ -1,3 +1,7 @@
+1. For cycle detection, returning true (cycle) is the outlier because most graphs are acyclic.
+2. The default assumption is that graphs are acyclic (e.g., DAGs). So the algorithm focuses on identifying the rare case of a cycle.
+
+
 class Solution {
   private: 
   bool detect_cycle_dfs(vector<vector<int>>& adj, int vis[], int node, int parent){
