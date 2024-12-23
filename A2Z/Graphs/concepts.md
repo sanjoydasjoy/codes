@@ -40,7 +40,7 @@
 <br> <br>
 
 ## Some Observations
-CYCLE <br>
+ CYCLE <br>
 1. For cycle detection, returning true (cycle) is the outlier because most graphs are acyclic.
 2. The default assumption is that graphs are acyclic (e.g., DAGs). So the algorithm focuses on identifying the rare case of a cycle.
 <br> <br>
