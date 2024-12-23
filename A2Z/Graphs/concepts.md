@@ -34,5 +34,10 @@
 
 
 ## Some understandings
-1. For cycle detection, true is the outlier because most graphs are acyclic.
+1. For cycle detection, returning true (cycle) is the outlier because most graphs are acyclic.
+2. The default assumption is that graphs are acyclic (e.g., DAGs). So the algorithm focuses on identifying the rare case of a cycle.
+
+1. Most graphs are bipartite, especially if you randomly check graphs or trees (which are always bipartite).
+2. 
+
 
