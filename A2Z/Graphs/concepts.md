@@ -33,5 +33,6 @@
 2. DFS involves recursive calls for each branch, so it seems like it's called many times
 
 
+## Some understandings
+1. For cycle detection, true is the outlier because most graphs are acyclic.
 
-  
