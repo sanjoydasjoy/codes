@@ -43,9 +43,12 @@
 1. For cycle detection, returning true (cycle) is the outlier because most graphs are acyclic.
 2. The default assumption is that graphs are acyclic (e.g., DAGs). So the algorithm focuses on identifying the rare case of a cycle.
 <br> <br>
-1. Most graphs are bipartite, especially if you randomly check graphs or trees (which are always bipartite).
-2. False is the outlier because it represents an exceptional case where the graph violates bipartite conditions.
-3. The function is designed to return true for the majority (bipartite) cases and false only when the outlier condition (not bipartite) is detected.
+1.Most graphs are bipartite, especially if you randomly check graphs or trees (which are always bipartite).
+2.False is the outlier because it represents an exceptional case where the graph violates bipartite conditions.
+3.The function is designed to return true for the majority (bipartite) cases and false only when the outlier condition (not bipartite) is detected.
+4.The default assumption is that graphs are bipartite. The algorithm focuses on identifying the rare case where it's not bipartite.
+
+
 
 <br> <br>
 
