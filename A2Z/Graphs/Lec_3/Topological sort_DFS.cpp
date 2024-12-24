@@ -7,6 +7,7 @@ question link : https://www.geeksforgeeks.org/problems/topological-sort/1?utm_so
 class Solution {
   private: 
     void dfs(vector<vector<int>>& adj,vector<int>& vis,stack<int>& st, int node){
+    
         vis[node] = 1;
         for(auto it : adj[node]){
             if(!vis[it]){
