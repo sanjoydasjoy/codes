@@ -13,6 +13,7 @@ private:
                 if(!dfs(graph, !col, color, it)) return false;
             }
             else if(color[it] ==  col) return false;
+            // else if(col[it] == color[node]) return false; this also works
         }
         return true;
     }
