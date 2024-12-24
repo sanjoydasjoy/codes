@@ -1,5 +1,3 @@
-
-
 class Solution {
   public:
     bool isCyclic(int V, vector<vector<int>> adj) {
