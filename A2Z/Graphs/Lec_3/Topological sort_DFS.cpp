@@ -2,6 +2,7 @@
 // A cycle in the graph would violate the ordering requirement
 // a linear ordering of vertices such that for every directed edge u → v, u appears before vertex v in the ordering
 
+question link : https://www.geeksforgeeks.org/problems/topological-sort/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=topological-sort
 
 class Solution {
   private: 
