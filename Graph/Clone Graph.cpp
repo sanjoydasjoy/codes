@@ -2,7 +2,10 @@ Node* dfs(Node* cur, unordered_map<Node*, Node*>& mp) {
     vector<Node*> neighbour;
     Node* clone = new Node(cur->val); // creates a new node (clone) with the same value as the current node (cur).
     mp[cur] = clone; // mark the current node as visited by storing the mapping of the original node (cur) to its clone in mp.
-    
+
+    // in basic DFS: vis[node] = 1; this is equivalent to "visiting" the node in a basic DFS, but here, you're also creating a copy of it.
+
+
     for (auto it : cur->neighbors) {
         if (mp.find(it) != mp.end()) {
             neighbour.push_back(mp[it]);
