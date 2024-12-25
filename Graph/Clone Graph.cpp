@@ -1,7 +1,7 @@
 Node* dfs(Node* cur, unordered_map<Node*, Node*>& mp) {
     vector<Node*> neighbour;
     Node* clone = new Node(cur->val); // creates a new node (clone) with the same value as the current node (cur).
-    mp[cur] = clone;
+    mp[cur] = clone; // mark the current node as visited by storing the mapping of the original node (cur) to its clone in mp.
     
     for (auto it : cur->neighbors) {
         if (mp.find(it) != mp.end()) {
