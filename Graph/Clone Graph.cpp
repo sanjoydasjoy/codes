@@ -1,6 +1,6 @@
 Node* dfs(Node* cur, unordered_map<Node*, Node*>& mp) {
     vector<Node*> neighbour;
-    Node* clone = new Node(cur->val);
+    Node* clone = new Node(cur->val); // creates a new node (clone) with the same value as the current node (cur).
     mp[cur] = clone;
     
     for (auto it : cur->neighbors) {
