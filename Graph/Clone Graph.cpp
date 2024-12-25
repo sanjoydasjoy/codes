@@ -21,3 +21,6 @@ Node* cloneGraph(Node* node) {
     return dfs(node, mp);
 }
 
+//The graph nodes are objects (Node*).
+//Instead of int node, it uses Node* cur because:
+
