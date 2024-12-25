@@ -13,12 +13,11 @@ Node* dfs(Node* cur, unordered_map<Node*, Node*>& mp) {
     clone->neighbors = neighbour;
     return clone;
 }
-
 Node* cloneGraph(Node* node) {
     unordered_map<Node*, Node*> mp;
     if (node == NULL)
         return NULL;
-
+    
     return dfs(node, mp);
 }
 
