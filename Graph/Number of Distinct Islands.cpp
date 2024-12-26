@@ -1,6 +1,6 @@
 class Solution {
   private:
-    void bfs(vector<vector<char>>& grid, vector<vector<int>>& vis, int row, int col){
+    void dfs(vector<vector<char>>& grid, vector<vector<int>>& vis, int row, int col){
         vis[row][col] = 1;
         queue<pair<int,int>>q;
         q.push({row,col});
@@ -11,17 +11,18 @@ class Solution {
             int row = q.front().first;
             int col = q.front().second;
             q.pop();
-            for(int i=-1;i<=1;i++){
-                for(int j=-1;j<=1;j++){
-                    int nrow = row + i;
-                    int ncol = col + j;
+            int drow[] = {-1, -1, -1, 0, 0, 1, 1, 1};
+            int dcol[] = {-1, 0, 1, -1, 1, -1, 0, 1};
+
+                for(int i=0;i<8;i++){
+                    int nrow = row + drow[i];
+                    int ncol = col + dcol[i];
                     if(nrow>=0 && nrow<n && ncol>=0 && ncol<m
                     && grid[nrow][ncol] == '1' && !vis[nrow][ncol]){
                         vis[nrow][ncol] = 1;
                         q.push({nrow,ncol});
                     }
                 }
-            }
         }
     }
   public:
@@ -34,7 +35,7 @@ class Solution {
             for(int j=0;j<m;j++){
                 if(!vis[i][j] && grid[i][j] == '1'){
                     cnt++;
-                    bfs(grid,vis,i,j);
+                    dfs(grid,vis,i,j);
                 }
             }
         }
