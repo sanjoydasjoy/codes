@@ -1,6 +1,6 @@
 class Solution {
   private:
-    void dfs(vector<vector<char>>& grid, vector<vector<int>>& vis, int row, int col){
+    void bfs(vector<vector<char>>& grid, vector<vector<int>>& vis, int row, int col){
         vis[row][col] = 1;
         queue<pair<int,int>>q;
         q.push({row,col});
@@ -35,7 +35,7 @@ class Solution {
             for(int j=0;j<m;j++){
                 if(!vis[i][j] && grid[i][j] == '1'){
                     cnt++;
-                    dfs(grid,vis,i,j);
+                    bfs(grid,vis,i,j);
                 }
             }
         }
