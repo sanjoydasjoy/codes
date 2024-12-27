@@ -14,18 +14,28 @@
 4. **how adjacency list is stored:** <br>
    given format: in edge style <br>
    
-   5 4 -> n,m <br>
-   1 2 <br>
-   2 3 <br>
-   3 4 <br>
-   4 5 <br><br>
-   vector<vector<int>> adj(n + 1); // n number of nodes <br> 
-   for (int i=0;i<m;i++){ // m number of edges <br> 
-    int u,v; <br>
-    cin>>u>>v;   <br>
-    adj[u].push_back(v);  // For directed graph <br>
-    adj[v].push_back(u);  // For undirected graph <br>
-   } <br>
+       5 4 -> n,m 
+       1 2 
+       2 3 
+       3 4 
+       4 5
+   <br><br>
+    
+       vector<vector<int>> adj(n + 1); // n number of nodes
+       for (int i=0;i<m;i++){ // m number of edges 
+           int u,v; 
+           cin>>u>>v;  
+           adj[u].push_back(v);  // For directed graph 
+           adj[v].push_back(u);  // For undirected graph
+        }
+   
+**The 2D vector adj will look like this in memory storage:**
+
+     adj[1] → [2]      // Node 1 is connected to Node 2
+     adj[2] → [1, 3]   // Node 2 is connected to Nodes 1 and 3
+     adj[3] → [2, 4]   // Node 3 is connected to Nodes 2 and 4
+     adj[4] → [3, 5]   // Node 4 is connected to Nodes 3 and 5
+     adj[5] → [4]      // Node 5 is connected to Node 4
 
 
 <br> <br>
