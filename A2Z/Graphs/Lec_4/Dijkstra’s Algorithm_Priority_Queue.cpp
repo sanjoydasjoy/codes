@@ -7,6 +7,10 @@
   3. greater<pair<int, int>>: by default, a priority queue in c++ is a max-heap, meaning it retrieves the largest element first.
                               using greater<pair<int, int>> turns it into a min-heap, meaning it retrieves the smallest element first.
                               this is crucial for Dijkstra's algorithm because we want the smallest distance to process first.
+                              
+  The priority queue compares the first element of the pair to decide which pair comes first.
+  If the first elements are the same, the second element of the pair decides the order.
+
 
 
 */
