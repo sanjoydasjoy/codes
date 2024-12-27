@@ -32,11 +32,11 @@
    
 **The 2D vector adj will look like this in memory storage:**
 
-     adj[1] → [2]      // Node 1 is connected to Node 2
-     adj[2] → [1, 3]   // Node 2 is connected to Nodes 1 and 3
-     adj[3] → [2, 4]   // Node 3 is connected to Nodes 2 and 4
-     adj[4] → [3, 5]   // Node 4 is connected to Nodes 3 and 5
-     adj[5] → [4]      // Node 5 is connected to Node 4
+       adj[1] → [2]      // Node 1 is connected to Node 2
+       adj[2] → [1, 3]   // Node 2 is connected to Nodes 1 and 3
+       adj[3] → [2, 4]   // Node 3 is connected to Nodes 2 and 4
+       adj[4] → [3, 5]   // Node 4 is connected to Nodes 3 and 5
+       adj[5] → [4]      // Node 5 is connected to Node 4
 
 
 <br> <br>
