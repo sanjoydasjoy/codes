@@ -11,6 +11,9 @@
   The priority queue compares the first element of the pair to decide which pair comes first.
   If the first elements are the same, the second element of the pair decides the order.
 
+   In a priority queue that is implemented as a min-heap, the smallest value (shortest distance, in the case of Dijkstra's algorithm) will always be at the top. 
+   If two nodes have the same distance, then the node with the smaller node number (or the smaller value in the comparison) will be placed at the top.
+
 
 
 */
