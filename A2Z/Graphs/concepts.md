@@ -12,13 +12,20 @@
    Better Alternative: vector<int> vis(n, 0);
 
 4. **how adjacency list is stored:** <br>
-   given format: in edge style <br><br>
+   given format: in edge style <br>
    
    5 4 <br>
    1 2 <br>
    2 3 <br>
    3 4 <br>
    4 5 <br>
+   vector<vector<int>> adj(n + 1);
+   for (int i=0;i<m;i++){
+    int u,v;
+    cin>>u>>v;   
+    adj[u].push_back(v);  // For directed graph
+    adj[v].push_back(u);  // For undirected graph
+}
 
 
 <br> <br>
