@@ -14,7 +14,7 @@
 4. **how adjacency list is stored:** <br>
    given format: in edge style <br>
    
-   5 4 <br>
+   5 4 -> n,m <br>
    1 2 <br>
    2 3 <br>
    3 4 <br>
