@@ -9,7 +9,17 @@
    standard (post-C++98/03). VLAs are allowed in C99 (a C standard), but in C++, array sizes must 
    be a constant expression that is determined at compile-time.
 
-   Better Alternative: vector<int> vis(n, 0); 
+   Better Alternative: vector<int> vis(n, 0);
+
+4. **how adjacency list is stored:**
+   given format: <br>
+   in edge style <br>
+   5 4 <br>
+   1 2 <br>
+   2 3 <br>
+   3 4 <br>
+   4 5 <br>
+
 
 <br> <br>
 
