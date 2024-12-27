@@ -11,9 +11,9 @@
 
    Better Alternative: vector<int> vis(n, 0);
 
-4. **how adjacency list is stored:**
-   given format: <br>
-   in edge style <br>
+4. **how adjacency list is stored:** <br>
+   given format: in edge style <br><br>
+   
    5 4 <br>
    1 2 <br>
    2 3 <br>
