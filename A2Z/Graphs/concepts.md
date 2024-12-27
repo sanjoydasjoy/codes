@@ -18,14 +18,14 @@
    1 2 <br>
    2 3 <br>
    3 4 <br>
-   4 5 <br>
-   vector<vector<int>> adj(n + 1);
-   for (int i=0;i<m;i++){
-    int u,v;
-    cin>>u>>v;   
-    adj[u].push_back(v);  // For directed graph
-    adj[v].push_back(u);  // For undirected graph
-}
+   4 5 <br><br>
+   vector<vector<int>> adj(n + 1); // n number of nodes <br> 
+   for (int i=0;i<m;i++){ // m number of edges <br> 
+    int u,v; <br>
+    cin>>u>>v;   <br>
+    adj[u].push_back(v);  // For directed graph <br>
+    adj[v].push_back(u);  // For undirected graph <br>
+   } <br>
 
 
 <br> <br>
