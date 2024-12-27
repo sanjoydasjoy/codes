@@ -12,8 +12,7 @@
 4.
 
       vector<vector<int>> adj(n) : 2D vector with n rows, but each row is initially an empty vector
-      vector<vector<int>> adj(n, vector<int>(n, 0)) : 2D vector with n rows,
-        each containing n elements initialized to 0 
+      vector<vector<int>> adj(n, vector<int>(n, 0)) : 2D vector with n rows, each containing n elements initialized to 0 
 
 6.
 
