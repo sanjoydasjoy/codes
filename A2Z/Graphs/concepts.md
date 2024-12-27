@@ -41,6 +41,40 @@
 
 <br> <br>
 
+5. **how adjacency matrix is stored:** <br>
+   given format: in edge style (same as adjacency list) <br>
+   
+       5 4 -> n,m 
+       1 2 
+       2 3 
+       3 4 
+       4 5
+
+       corresponding code for storing the graph:
+       
+       vector<vector<int>> adjMatrix(n + 1, vector<int>(n + 1, 0)); 
+          /* In adjacency matrix, the matrix is always n x n because:
+              the matrix needs to record whether there is a connection between every pair of nodes.
+              for a graph with n nodes, recording connections for all possible pairs, i.e., n x n entries. */
+
+       for (int i=0;i<m;i++){ // m number of edges 
+           int u,v; 
+           cin>>u>>v;  
+           adj[u].push_back(v);  // For directed graph 
+           adj[v].push_back(u);  // For undirected graph
+        }
+   
+       **The 2D vector adj will look like this in memory storage:**
+
+       adj[1] → [2]      // Node 1 is connected to Node 2
+       adj[2] → [1, 3]   // Node 2 is connected to Nodes 1 and 3
+       adj[3] → [2, 4]   // Node 3 is connected to Nodes 2 and 4
+       adj[4] → [3, 5]   // Node 4 is connected to Nodes 3 and 5
+       adj[5] → [4]      // Node 5 is connected to Node 4
+
+
+<br> <br>
+
 ## BFS - Breadth-First Search
 1. The traversal of the graph proceeds level-by-level starting from a single node.
 2. BFS uses a queue to explore the nodes.
