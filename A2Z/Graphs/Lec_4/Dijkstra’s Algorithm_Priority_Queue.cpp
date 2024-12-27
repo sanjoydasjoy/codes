@@ -1,5 +1,14 @@
 /*
   Dijkstra's algorithm is similar to BFS but is designed for weighted graphs, while BFS works for unweighted graphs
+
+  components in priority queue: 
+  1. pair<int, int>: in Dijkstra's algorithm, the pair represents {distance, node}.
+  2. vector<pair<int, int>>: a vector is used, which is the default container for a priority_queue, used to store elements of the priority queue.
+  3. greater<pair<int, int>>: by default, a priority queue in c++ is a max-heap, meaning it retrieves the largest element first.
+                              using greater<pair<int, int>> turns it into a min-heap, meaning it retrieves the smallest element first.
+                              this is crucial for Dijkstra's algorithm because we want the smallest distance to process first.
+
+
 */
 class Solution {
   public:
