@@ -1,20 +1,28 @@
 ## Basics
-1. if theres n number of vertices, there will be nC2 edges, and 2 ^ (nC2) number of total combination of graphs that can be made 
+1.
 
-2. vector<int> adj [N] is wrong , absolutely wrong, cause standard c++ doesnt get VLAs... it should be <br>
- vector<vector< int >> adj (n) or vector<vector< int >> adj (n, vector<int>(n,0))
+      if theres n number of vertices, there will be nC2 edges, and 2 ^ (nC2) number of total combination of graphs that can be made 
 
-3. vector<vector<int>> transpose(n) : 2D vector with n rows, but each row is initially an empty vector <br>
-   vector<vector<int>> transpose(n, vector<int>(n, 0)) : 2D vector with n rows, each containing n elements initialized to 0 <br>
+2.
 
-5. int vis[n] = {0}; is not considered good practice in modern C++ for the following reasons:   
-   The syntax int vis[n] creates a variable-length array (VLA), which is not part of the C++     
-   standard (post-C++98/03). VLAs are allowed in C99 (a C standard), but in C++, array sizes must 
-   be a constant expression that is determined at compile-time.
+      vector<int> adj [N] is wrong , absolutely wrong, cause standard c++ doesnt get VLAs... it should be <br>
+      vector<vector< int >> adj (n) or vector<vector< int >> adj (n, vector<int>(n,0))
 
-   Better Alternative: vector<int> vis(n, 0);
+3.
 
-6. **how adjacency list is stored:** <br>
+      vector<vector<int>> transpose(n) : 2D vector with n rows, but each row is initially an empty vector <br>
+      vector<vector<int>> transpose(n, vector<int>(n, 0)) : 2D vector with n rows, each containing n elements initialized to 0 <br>
+
+4.
+
+      int vis[n] = {0}; is not considered good practice in modern C++ for the following reasons:   
+      The syntax int vis[n] creates a variable-length array (VLA), which is not part of the C++     
+      standard (post-C++98/03). VLAs are allowed in C99 (a C standard), but in C++, array sizes must 
+      be a constant expression that is determined at compile-time.
+
+      Better Alternative: vector<int> vis(n, 0);
+
+8. **how adjacency list is stored:** <br>
    given format: in edge style <br>
    
        5 4 -> n,m 
