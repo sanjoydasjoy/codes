@@ -30,7 +30,7 @@
            adj[v].push_back(u);  // For undirected graph
         }
    
-**The 2D vector adj will look like this in memory storage:**
+       **The 2D vector adj will look like this in memory storage:**
 
        adj[1] → [2]      // Node 1 is connected to Node 2
        adj[2] → [1, 3]   // Node 2 is connected to Nodes 1 and 3
