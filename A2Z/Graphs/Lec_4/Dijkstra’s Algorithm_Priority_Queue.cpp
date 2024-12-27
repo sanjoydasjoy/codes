@@ -14,9 +14,8 @@
    In a priority queue that is implemented as a min-heap, the smallest value (shortest distance, in the case of Dijkstra's algorithm) will always be at the top. 
    If two nodes have the same distance, then the node with the smaller node number (or the smaller value in the comparison) will be placed at the top.
 
-
-
 */
+
 class Solution {
   public:
     vector<int> dijkstra(vector<vector<pair<int, int>>> &adj, int src) {
@@ -33,11 +32,11 @@ class Solution {
             pq.pop();
 
             for(auto it : adj[node]) {
-                int edgeWeight = it.second;
                 int adjNode = it.first;
-
+                int edgeWeight = it.second;
+                
                 if(dis + edgeWeight < dist[adjNode]) {
-                    dist[adjNode]=dis + edgeWeight;
+                    dist[adjNode] = dis + edgeWeight;
                     pq.push({dist[adjNode], adjNode});
                 }
             }
