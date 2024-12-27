@@ -15,8 +15,7 @@ class Solution {
     vector<int> dijkstra(vector<vector<pair<int, int>>> &adj, int src) {
         int V = adj.size();
         priority_queue<pair<int, int>, vector<pair<int, int> >,greater<pair<int, int>>> pq;
-        vector<int> dist(V);
-        for(int i = 0;i<V; i++) dist[i] = 1e9;
+        vector<int> dist(V, 1e9);
 
         dist[src] =0;
         pq.push({0,src});
