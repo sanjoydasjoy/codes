@@ -12,7 +12,7 @@ class Solution {
                 dfs(adj, vis, st, it);
             }
         }
-        st.push(node);
+        st.push(node); // only step for toposort
     }
   public:
     vector<int> topologicalSort(vector<vector<int>>& adj) {
