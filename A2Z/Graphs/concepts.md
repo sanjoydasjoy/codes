@@ -19,8 +19,9 @@
        2 3 
        3 4 
        4 5
- <br>
-    
+
+       corresponding code for storing the graph:
+       
        vector<vector<int>> adj(n + 1); // n number of nodes
        for (int i=0;i<m;i++){ // m number of edges 
            int u,v; 
