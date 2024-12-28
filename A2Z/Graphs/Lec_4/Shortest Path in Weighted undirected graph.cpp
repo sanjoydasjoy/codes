@@ -1,3 +1,5 @@
+question link:  https://www.geeksforgeeks.org/problems/shortest-path-in-weighted-undirected-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=shortest-path-in-weighted-undirected-graph
+
 class Solution {
   public:
     vector<int> shortestPath(int n, int m, vector<vector<int>>& edges){
