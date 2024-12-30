@@ -1,3 +1,5 @@
+question link: https://www.geeksforgeeks.org/problems/topological-sort/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=topological-sort
+
 class Solution {
   public:
     vector<int> topologicalSort(vector<vector<int>>& adj) {
