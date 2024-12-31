@@ -1,8 +1,6 @@
-class Solution
-{
+class Solution{
   public:
-    vector<int> findOrder(int V, int m, vector<vector<int>> prerequisites) 
-    {
+    vector<int> findOrder(int V, int m, vector<vector<int>> prerequisites) {
         vector<vector<int>>adj(V);
         for(auto it : prerequisites){
             adj[it[1]].push_back(it[0]);
