@@ -1,3 +1,6 @@
+question link: 
+https://www.geeksforgeeks.org/problems/prerequisite-tasks/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=prerequisite-tasks
+
 class Solution {
   public:
     bool isPossible(int N, int P, vector<pair<int, int> >& prerequisites) {
