@@ -1,3 +1,6 @@
+question link:
+https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
+
 class Solution {
   private:
   bool dfs(vector<vector<int>> adj, vector<int>&vis, vector<int>&path_tracker, int node){
