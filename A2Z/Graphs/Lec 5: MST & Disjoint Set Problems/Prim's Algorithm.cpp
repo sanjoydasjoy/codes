@@ -105,7 +105,7 @@ int main() {
 2 4 7
 
 // if it was asked to return the mst array
-// To print the edges in the Minimum Spanning Tree (MST), 
+// to print the edges in the Minimum Spanning Tree (MST), 
 // this can be achieved by maintaining a parent vector or directly storing the edges in a list during the process.
 
 
