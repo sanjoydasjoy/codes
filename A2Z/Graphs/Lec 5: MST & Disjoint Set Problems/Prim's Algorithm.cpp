@@ -33,7 +33,7 @@ class Solution {
 };
 
 
-// for ide
+// for to run in the ide
 
 #include <iostream>
 #include <vector>
