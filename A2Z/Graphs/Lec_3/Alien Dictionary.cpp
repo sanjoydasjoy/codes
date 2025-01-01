@@ -1,3 +1,8 @@
+
+
+// The problem revolves around determining a valid order of characters, which is a classic use case for topological sorting in directed acyclic graphs (DAG).
+
+
 class Solution {
   public:
     string findOrder(vector<string> dict, int k) {
