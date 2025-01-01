@@ -13,7 +13,8 @@ https://www.geeksforgeeks.org/problems/alien-dictionary/1?utm_source=youtube&utm
 // if you give vector<vector<int>>adj, it will give segmentation error. it should always be vector<vector<int>>adj(k)
 // Mapping characters to indices (e.g., 'a' -> 0, 'b' -> 1) by adj[s1[j] - 'a'].push_back(s2[j] - 'a');
 // Always initialize the graph with the expected size (vector<vector<int>>(k) for k nodes).
-// 
+// topo+=(char)(node+'a'); because node = 0 → 0 + 'a' → 'a', node = 1 → 1 + 'a' → 'b'
+
 
 
 
