@@ -71,6 +71,8 @@
             adj[v].push_back({u, w});              // Undirected edge
         }
 
+        **This how the 2D vector adj will look like this in memory storage:**
+
         adj[1] → [(2, 10)]            // Node 1 is connected to Node 2 with weight 10
         adj[2] → [(1, 10), (3, 15)]   // Node 2 is connected to Nodes 1 (weight 10) and 3 (weight 15)
         adj[3] → [(2, 15), (4, 20)]   // Node 3 is connected to Nodes 2 (weight 15) and 4 (weight 20)
