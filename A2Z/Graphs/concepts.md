@@ -54,6 +54,34 @@
        adj[5] → [4]      // Node 5 is connected to Node 4
 
 
+       now for weighted graphs
+       5 4
+       1 2 10  
+       2 3 15  
+       3 4 20  
+       4 5 25
+
+       corresponding code for storing the graph:
+
+       vector<vector<pair<int, int>>> adj(n + 1); // n nodes, adjacency list for weighted graph
+        for (int i = 0; i < m; i++) {              // m edges
+            int u, v, w;
+            cin >> u >> v >> w;                    // u and v are nodes, w is weight
+            adj[u].push_back({v, w});              // Directed edge
+            adj[v].push_back({u, w});              // Undirected edge
+        }
+
+        adj[1] → [(2, 10)]            // Node 1 is connected to Node 2 with weight 10
+        adj[2] → [(1, 10), (3, 15)]   // Node 2 is connected to Nodes 1 (weight 10) and 3 (weight 15)
+        adj[3] → [(2, 15), (4, 20)]   // Node 3 is connected to Nodes 2 (weight 15) and 4 (weight 20)
+        adj[4] → [(3, 20), (5, 25)]   // Node 4 is connected to Nodes 3 (weight 20) and 5 (weight 25)
+        adj[5] → [(4, 25)]            // Node 5 is connected to Node 4 with weight 25
+
+
+
+           
+
+
 <br> <br>
 
 5. **how adjacency matrix is stored:** <br>
