@@ -104,3 +104,47 @@ int main() {
 1 4 5
 2 4 7
 
+// if it was asked to return the mst array
+
+ public:
+    int spanningTree(int V, vector<vector<int>> adj[]) {
+        priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, greater<pair<int, pair<int, int>>>> pq;
+        pq.push({0, {0, -1}});
+        vector<int> vis(V, 0);
+        int sum = 0;
+        vector<pair<int, int>> mstEdges;
+
+        while (!pq.empty()) {
+            int weight = pq.top().first;
+            int node = pq.top().second.first;
+            int parent = pq.top().second.second;
+            pq.pop();
+
+            if (vis[node] == 1) continue;
+
+            vis[node] = 1;
+            sum += weight;
+
+            if (parent != -1) {
+                mstEdges.push_back({parent, node});
+            }
+
+            for (auto it : adj[node]) {
+                int adjNode = it[0];
+                int edgeW = it[1];
+                if (!vis[adjNode]) {
+                    pq.push({edgeW, {adjNode, node}});
+                }
+            }
+        }
+
+        for (auto edge : mstEdges) {
+            cout << edge.first << " - " << edge.second << endl;
+        }
+
+        return sum;
+    }
+};
+ 
+  
+  
