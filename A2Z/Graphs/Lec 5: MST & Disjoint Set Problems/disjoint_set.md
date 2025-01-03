@@ -16,7 +16,7 @@ this is the most important topic in the graph series and commonly asked in almos
    - this works in dynamic graphs
    - look upon this following edges, (1,2), (2,3), (4,5), (6,7), (5,6), (3,7)
    - if we stop the graph formation in (6,7) and ask does 4 and 1 belong to the same component. till this point they are not
-   - so at any stage there can be question like this and we need to do this in constant time 
+   - so at any stage there can be question like this and we need to answer this in constant time 
 
 
 
