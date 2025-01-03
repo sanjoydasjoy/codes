@@ -89,6 +89,7 @@
 5. **how adjacency matrix is stored:** <br>
    given format: in edge style <br>
    
+   
        5 4 -> n,m 
        1 2 
        2 3 
