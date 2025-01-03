@@ -11,7 +11,12 @@ this is the most important topic in the graph series and commonly asked in almos
    - suppose there is a graph with two separate components {1,2,3,4} and {5,6,7}
    - if it was asked that does 1 and 5 belong to the same component or not
    - what is brute force approach, we will pick up 1 and start dfs traversal, so since it couldnt find 5, means they dont belong to the same component
-   - 
+   - but it will take linear time complexity O(E+V)
+   - this is where disjoint set comes in the scene and says im gonna do this is constant time
+   - this works in dynamic graphs
+   - look upon this following edges, (1,2), (2,3), (4,5), (6,7), (5,6), (3,7)
+   - if we stop the graph formation in (6,7) and ask does 4 and 1 belong to the same component. till this point they are not
+   - so at any stage there can be question like this and we need to do this in constant time 
 
 
 
