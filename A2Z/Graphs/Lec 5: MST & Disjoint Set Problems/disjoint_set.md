@@ -1,6 +1,6 @@
 this is the most important topic in the graph series and commonly asked in almost all interview and online assessment. so you gotta master it. <br>
 ### Disjoint set
-1. **Definition**: A disjoint set is a way to group items into separate groups where no group overlaps.
+1. **Definition**: A disjoint set is a way to group items into separate groups where no group overlaps. Its called disjoint set because there are no common node between two sets. S1 ∩ S2 = ∅, where S1 = {1,2,3,4}, S2 = {5,6,7}
 2. **Properties**:  
    - It has two main tasks:
    - 1. Find: Check which group an item belongs to.
