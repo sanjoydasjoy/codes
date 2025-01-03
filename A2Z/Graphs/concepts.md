@@ -127,6 +127,7 @@
 
 
 ## BFS - Breadth-First Search
+
 1. The traversal of the graph proceeds level-by-level starting from a single node.
 2. BFS uses a queue to explore the nodes.
 3. All the adjacency connections of the graph will be covered in the while loop
