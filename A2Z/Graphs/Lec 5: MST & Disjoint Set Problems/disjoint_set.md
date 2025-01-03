@@ -1,4 +1,4 @@
-this is the most important topic in the graph series and commonly asked in almost all interview and online assessment as well. so you gotta master it. <br>
+this is the most important topic in graph series and commonly asked in almost all interview and online assessment. so you gotta master it. <br>
 ### Disjoint set
 1. **Definition**: A disjoint set is a way to group items into separate groups where no group overlaps.
 2. **Properties**:  
