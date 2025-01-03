@@ -52,6 +52,7 @@
        adj[3] → [2, 4]   // Node 3 is connected to Nodes 2 and 4
        adj[4] → [3, 5]   // Node 4 is connected to Nodes 3 and 5
        adj[5] → [4]      // Node 5 is connected to Node 4
+   
 
 
        now for weighted graphs
