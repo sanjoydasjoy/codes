@@ -100,6 +100,18 @@
                 adj[1] -> [[0, 5], [2, 3]]
                 adj[2] -> [[1, 3], [0, 1]]
 
+           and thats how we can access em
+
+                vector<pair<int, pair<int, int>>> edges;
+                    for(int i = 0;i<V;i++) {
+                        for(auto it : adj[i]) {
+                           int adjNode = it[0];
+                           int wt = it[1];
+                           int node = i;
+                           edges.push_back({wt, {node, adjNode}});
+                    }
+            }
+
    
 
 
