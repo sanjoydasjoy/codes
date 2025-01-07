@@ -83,6 +83,30 @@
         adj[5] → [(4, 25)]            // Node 5 is connected to Node 4 with weight 25
 
 
+           ** new style for weighted graph:
+           Input:
+                3 3
+                0 1 5
+                1 2 3
+                0 2 1
+           input is like that and the given adj list format is- int spanningTree(int V, vector<vector<int>> adj[]) {
+
+           since we have learnt that the proper way to store weighted graph is vector<vector<pair<int, int>>> adj(V)
+
+           this will not store like it was previously
+
+           instead, it will store as adj[i] -> [[node, weight], [node, weight]]
+                adj[0] -> [[1, 5], [2, 1]]
+                adj[1] -> [[0, 5], [2, 3]]
+                adj[2] -> [[1, 3], [0, 1]]
+
+   
+
+
+
+                
+
+
 
            
 
