@@ -109,8 +109,8 @@
                            int wt = it[1];
                            int node = i;
                            edges.push_back({wt, {node, adjNode}});
+                        }
                     }
-            }
 
    
 
