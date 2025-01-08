@@ -19,7 +19,10 @@
 6.   
 
            if you give vector<vector<int>>adj, it will give segmentation error. it should always be vector<vector<int>>adj(k)
-7.
+
+             we use int node = it[0] when edges is a list of arrays, e.g. edges = [[0, 1, 9]]
+             and int node = it.first when edges is a vector of pairs, e.g. edges = {{1, 2}, {3, 4}}
+8.
 
       int vis[n] = {0}; is not considered good practice in modern C++ for the following reasons:   
       The syntax int vis[n] creates a variable-length array (VLA), which is not part of the C++     
@@ -28,7 +31,7 @@
 
       Better Alternative: vector<int> vis(n, 0);
 
-8. **how adjacency list is stored:** <br>
+9. **how adjacency list is stored:** <br>
    given format: in edge style <br>
    
        5 4 -> n,m 
