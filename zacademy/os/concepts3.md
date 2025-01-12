@@ -33,6 +33,28 @@ Each process must ask permission to enter critical section in entry section, may
     3. Bounded Waiting: A bound must exist on the number of times that other processes are allowed to enter their critical 
        sections after a process has made a request to enter its critical section and before that request is granted
 
+
+ <br><br>      
+
+### Peterson's Solution (Humble algorithm)
+
+<img src="chapters/pics/peterson1.png" alt="Four Components of OS" width="500"> <br> <br>
+<img src="chapters/pics/peterson2.png" alt="Four Components of OS" width="500"> <br> <br>
+<img src="chapters/pics/peterson3.png" alt="Four Components of OS" width="500"> <br> <br>
+<img src="chapters/pics/peterson4.png" alt="Four Components of OS" width="500"> <br> <br>
+
+
+### test_and_set lock Solution
+
+**Atomic operation: A single operation that cannnot be interrupted by anyone**
+
+<img src="chapters/pics/testset1.png" alt="Four Components of OS" width="500"> <br> <br>
+<img src="chapters/pics/testset2.png" alt="Four Components of OS" width="500"> <br> <br>
+<img src="chapters/pics/testset3.png" alt="Four Components of OS" width="500"> <br> <br>
+
+
+
+
 ## Classical Problems of Synchronization: 
 
 **Bounded-Buffer Problem** <br><br>
