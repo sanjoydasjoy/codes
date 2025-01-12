@@ -41,6 +41,7 @@ Each process must ask permission to enter critical section in entry section, may
 <img src="chapters/pics/peterson1.png" alt="Four Components of OS" width="500"> <br> <br>
 <img src="chapters/pics/peterson2.png" alt="Four Components of OS" width="500"> <br> <br>
 <img src="chapters/pics/peterson3.png" alt="Four Components of OS" width="500"> <br> <br>
+**Peterson's Algorithm satisfies all three conditions of synchronization**
 <img src="chapters/pics/peterson4.png" alt="Four Components of OS" width="500"> <br> <br>
 
 
@@ -53,7 +54,9 @@ Each process must ask permission to enter critical section in entry section, may
 <img src="chapters/pics/testset3.png" alt="Four Components of OS" width="500"> <br> <br>
 
 
+Test-and-Set Lock provides Mutual Exclusion and ensures Progress, but it does not inherently guarantee Bounded Waiting. This limitation arises because processes may experience starvation due to its reliance on busy-waiting. To achieve Bounded Waiting, further mechanisms like priority-based scheduling or fairness algorithms are necessary.
 
+<br> <br><br> 
 
 ## Classical Problems of Synchronization: 
 
