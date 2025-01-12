@@ -41,8 +41,9 @@ Each process must ask permission to enter critical section in entry section, may
 <img src="chapters/pics/peterson1.png" alt="Four Components of OS" width="500"> <br> <br>
 <img src="chapters/pics/peterson2.png" alt="Four Components of OS" width="500"> <br> <br>
 <img src="chapters/pics/peterson3.png" alt="Four Components of OS" width="500"> <br> <br>
-**Peterson's Algorithm satisfies all three conditions of synchronization** <br>
-<img src="chapters/pics/peterson4.png" alt="Four Components of OS" width="500"> <br> <br>
+<br> <br>
+**Peterson's Algorithm satisfies all three conditions of synchronization** <br><br><br> 
+<img src="chapters/pics/peterson4.png" alt="Four Components of OS" width="500"> <br> <br><br> 
 
 
 ### test_and_set lock Solution
