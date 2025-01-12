@@ -120,7 +120,6 @@ A semaphore is a synchronization tool that allows a fixed number of threads to a
 
 
 
-
 <br><br><br>
 ## Classical Problems of Synchronization: 
 
