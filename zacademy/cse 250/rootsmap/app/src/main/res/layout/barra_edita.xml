@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<Button
+		android:id="@+id/edita_annulla"
+		android:layout_width="130dp"
+		android:layout_height="63dp"
+		android:layout_x="57dp"
+		android:layout_y="8dp"
+		android:text="@string/cancel" />
+
+	<Button
+		android:id="@+id/edita_salva"
+		style="@style/AppTheme.BottoneNormale"
+		android:layout_width="151dp"
+		android:layout_height="63dp"
+		android:layout_x="213dp"
+		android:layout_y="9dp"
+		android:text="@string/done" />
+</AbsoluteLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--	android:layout_width="match_parent"-->
+<!--	android:layout_height="match_parent">-->
+
+<!--	<Button-->
+<!--		android:id="@+id/edita_annulla"-->
+<!--		android:layout_width="102dp"-->
+<!--		android:layout_height="63dp"-->
+<!--		android:layout_marginStart="30dp"-->
+<!--		android:layout_marginTop="50dp"-->
+<!--		android:text="@string/cancel" />-->
+
+<!--	<Button-->
+<!--		android:id="@+id/edita_salva"-->
+<!--		style="@style/AppTheme.BottoneNormale"-->
+<!--		android:layout_width="140dp"-->
+<!--		android:layout_height="63dp"-->
+<!--		android:layout_marginStart="200dp"-->
+<!--		android:text="@string/done" />-->
+<!--</RelativeLayout>-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--	android:layout_width="match_parent"-->
+<!--	android:layout_height="match_parent"-->
+<!--	android:orientation="vertical"-->
+<!--	android:gravity="top">-->
+
+<!--	<LinearLayout-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:orientation="horizontal">-->
+
+<!--		<Button-->
+<!--			android:id="@+id/edita_salva"-->
+<!--			style="@style/AppTheme.BottoneNormale"-->
+<!--			android:layout_width="116dp"-->
+<!--			android:layout_height="50dp"-->
+<!--			android:text="@string/done" />-->
+
+<!--		<Button-->
+<!--			android:id="@+id/edita_annulla"-->
+<!--			android:layout_width="222dp"-->
+<!--			android:layout_height="match_parent"-->
+<!--			android:text="@string/cancel" />-->
+<!--	</LinearLayout>-->
+
+<!--	<LinearLayout-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:orientation="horizontal">-->
+
+<!--	</LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--	android:layout_width="match_parent"-->
+<!--	android:layout_height="match_parent"-->
+<!--	android:orientation="horizontal"-->
+<!--	android:gravity="top">-->
+
+<!--	<Button-->
+<!--		android:id="@+id/edita_annulla"-->
+<!--		android:layout_width="wrap_content"-->
+<!--		android:layout_height="63dp"-->
+<!--		android:text="@string/cancel" />-->
+
+<!--	<Button-->
+<!--		android:id="@+id/edita_salva"-->
+<!--		style="@style/AppTheme.BottoneNormale"-->
+<!--		android:layout_width="116dp"-->
+<!--		android:layout_height="68dp"-->
+
+<!--		android:text="@string/done" />-->
+<!--</LinearLayout>-->
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--	android:layout_width="match_parent"-->
+<!--	android:layout_height="wrap_content"-->
+<!--	android:orientation="horizontal">-->
+
+<!--	<Button-->
+<!--		android:id="@+id/edita_annulla"-->
+<!--		android:layout_width="wrap_content"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:layout_weight="1"-->
+<!--		android:text="@string/cancel" />-->
+
+<!--	<Button-->
+<!--		android:id="@+id/edita_salva"-->
+<!--		style="@style/AppTheme.BottoneNormale"-->
+<!--		android:layout_width="wrap_content"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:layout_weight="2"-->
+<!--		android:text="@string/done" />-->
+<!--</LinearLayout>-->
+

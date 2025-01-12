@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/trees_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/bottom_padding"
+        android:scrollbarStyle="outsideOverlay"
+        android:numColumns="2"
+        android:columnWidth="160dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center" />
+</LinearLayout>
+
+<include layout="@layout/progress" />
+
+<include layout="@layout/fab" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <ListView-->
+<!--            android:id="@+id/trees_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:clipToPadding="false"-->
+<!--            android:paddingBottom="@dimen/bottom_padding"-->
+<!--            android:scrollbarStyle="outsideOverlay" />-->
+<!--    </LinearLayout>-->
+
+<!--    <include layout="@layout/progress" />-->
+
+<!--    <include layout="@layout/fab" />-->
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <GridView-->
+<!--        android:id="@+id/trees_list"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:clipToPadding="false"-->
+<!--        android:paddingBottom="@dimen/bottom_padding"-->
+<!--        android:scrollbarStyle="outsideOverlay"-->
+<!--        android:numColumns="2"-->
+<!--        android:columnWidth="160dp"-->
+<!--        android:stretchMode="columnWidth"-->
+<!--        android:gravity="center" />-->
+<!--</LinearLayout>-->
+
+<!--<include layout="@layout/progress" />-->
+
+<!--<include layout="@layout/fab" />-->
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->

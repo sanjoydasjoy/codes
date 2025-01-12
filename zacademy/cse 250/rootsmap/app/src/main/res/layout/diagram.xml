@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <app.familygem.MoveLayout
+        android:id="@+id/diagram_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/diagram_background">
+
+        <RelativeLayout
+            android:id="@+id/diagram_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:padding="50dp" />
+    </app.familygem.MoveLayout>
+
+    <ImageButton
+        android:id="@+id/diagram_hamburger"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/selectableItemBackground"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:srcCompat="@drawable/hamburger"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/diagram_options"
+        style="@style/TintaBianca"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="end"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:visibility="gone" /> <!-- Set visibility to gone -->
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

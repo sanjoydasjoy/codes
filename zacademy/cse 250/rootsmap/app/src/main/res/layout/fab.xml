@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/fab_box"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:layout_gravity="end|bottom">
+
+		<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/fab"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:text = "Add"
+			android:src="@drawable/piu"
+			app:backgroundTint="@color/gray_text"
+			/>
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout-->
+<!--	xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--	xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--	android:id="@+id/fab_box"-->
+<!--	android:layout_width="wrap_content"-->
+<!--	android:layout_height="wrap_content"-->
+<!--	android:orientation="vertical"-->
+<!--	android:layout_gravity="end|bottom">-->
+<!--	<com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--		android:id="@+id/fab"-->
+<!--		android:layout_width="100dp"-->
+<!--		android:layout_height="100dp"-->
+<!--		android:text = "Add"-->
+<!--		app:backgroundTint="@color/gray_text"-->
+<!--		/>-->
+<!--</LinearLayout>-->
+
+
+
+<!--<Button-->
+<!--android:id="@+id/fab"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginEnd="16dp"-->
+<!--android:layout_marginBottom="16dp"-->
+<!--android:text="@string/add"-->
+<!--android:layout_gravity="end"-->
+<!--android:background="@android:color/darker_gray"/>-->
