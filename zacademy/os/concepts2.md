@@ -1,3 +1,5 @@
+**chapter 5**
+
 ## CPU Scheduling
 
 The dispatcher is a component of the operating system that switches control from the OS to a user process. <br>
