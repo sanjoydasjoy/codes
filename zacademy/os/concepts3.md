@@ -74,6 +74,7 @@ A semaphore is a synchronization tool that allows a fixed number of threads to a
               signal(mutex) increments the value (unblocks a waiting process if it's 0).
 
 <br>
+
 **Counting Semaphore:**
     
     Used to manage access to a resource with multiple instances.
@@ -88,14 +89,19 @@ A semaphore is a synchronization tool that allows a fixed number of threads to a
 
 <br>
 
-**main difference between a counting semaphore and a binary semaphore** <br><br>
+**Main difference between a counting semaphore and a binary semaphore** <br><br>
 
-Counting semaphore can hold values greater than 1, typically used to manage access to a pool of resources. The value of the semaphore represents the number of available resources.  Allows multiple threads/processes to access a limited number of shared resources. 
-<br>
-while <br>
-Binary Semaphore holds only two values 0 or 1. Acts as a lock or signal mechanism. It allows only one thread/process to access a shared resource at a time.
-<br>
-A binary semaphore is simpler and can often be used as a mutex, whereas a counting semaphore provides more flexibility for managing multiple resources.
+    Counting semaphore can hold values greater than 1, typically used to manage access to a pool of resources. 
+    The value of the semaphore represents the number of available resources.  
+    Allows multiple threads/processes to access a limited number of shared resources. 
+
+    while 
+    Binary Semaphore holds only two values 0 or 1. Acts as a lock or signal mechanism. 
+    It allows only one thread/process to access a shared resource at a time.
+    
+    A binary semaphore is simpler and can often be used as a mutex, 
+    whereas a counting semaphore provides more flexibility for managing multiple resources.
+    
 <br><br>
 
 
@@ -115,7 +121,7 @@ A binary semaphore is simpler and can often be used as a mutex, whereas a counti
 
 
 
-
+<br><br><br>
 ## Classical Problems of Synchronization: 
 
 **Bounded-Buffer Problem** <br><br>
