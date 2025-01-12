@@ -25,13 +25,13 @@ Each process must ask permission to enter critical section in entry section, may
 
 ## Solution to Critical-Section Problem
 
-    1. Mutual Exclusion - If a process is executing in its critical section,then no other processes can be executing in their critical sections
+    1. Mutual Exclusion: If a process executing in its critical section,no other processes can be executing in their critical sections
     
-    2. Progress - If no process is executing in its critical section and there exist some processes that wish to enter their critical section, 
-                  then the selection of the processes that will enter the critical section next cannot be postponed indefinitely
+    2. Progress: If no process is executing in its critical section and there exist some processes that wish to enter their critical
+                 section,then the selection of the processes that will enter the critical section next cannot be postponed indefinitely
                   
-    3. Bounded Waiting - A bound must exist on the number of times that other processes are allowed to enter their critical sections after a
-                         process has made a request to enter its critical section and before that request is granted
+    3. Bounded Waiting: A bound must exist on the number of times that other processes are allowed to enter their critical sections 
+                        after a process has made a request to enter its critical section and before that request is granted
 
 ## Classical Problems of Synchronization: 
 
