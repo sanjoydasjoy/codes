@@ -1,6 +1,6 @@
 ### Key Terms
-- [Basic Command for initializing and pushing a Git repository to a remote](#basic_command_for_initializing_and_pushing_a_git_repository_to_a_remote)
-- [rm -rf .git](#rm_rf_git)
+- [Basic Command for initializing and pushing a Git repository to a remote](#basic-command-for-initializing-and-pushing-a-git-repository-to-a-remote)
+- [rm -rf .git](#rm--rf-git)
 
 
 ### Basic Command for initializing and pushing a Git repository to a remote
