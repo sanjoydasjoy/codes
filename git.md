@@ -90,6 +90,7 @@ Untracked files:
         newFile.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
+
 ```
 
 This tells you that `index.html` and `app.js` are modified but not yet staged, and `newFile.txt` is untracked (not added to Git yet).
