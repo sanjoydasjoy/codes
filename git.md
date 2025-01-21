@@ -1,3 +1,8 @@
+### Key Terms
+- [Basic Command for initializing and pushing a Git repository to a remote](#basic_command_for_initializing_and_pushing_a_git_repository_to_a_remote)
+- [rm -rf .git](#rm_rf_git)
+
+
 ### Basic Command for initializing and pushing a Git repository to a remote
 
     git init
@@ -15,6 +20,8 @@
 4. **`git branch -M main`** – Renames the current branch to `main`. Initially, Git used master as the default branch name. However, newer versions of Git (since 2020) default to main instead of master. If your Git still defaults to master, the command renames it to main. <br>
 5. **`git remote add origin <URL>`** – Links the local repo to a remote GitHub repository. <br>
 6. **`git push -u origin main`** – Pushes the `main` branch to the remote repo and sets tracking. <br>
+
+___
 
 
 <br><br><br>
