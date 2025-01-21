@@ -1,6 +1,7 @@
 ### Key Terms
 - [Basic Command for initializing and pushing a Git repository to a remote](#basic-command-for-initializing-and-pushing-a-git-repository-to-a-remote)
 - [rm -rf .git](#rm--rf-git)
+- [git status](#git-status)
 
 
 ### Basic Command for initializing and pushing a Git repository to a remote
@@ -51,5 +52,46 @@ This command forcefully and recursively deletes the .git folder, removing all ve
 ___
 <br><br><br>
 
+### git status
+
+The command `git status` is used to display the state of the working directory and staging area. It provides useful information about the current state of your repository.
+
+### What it shows:
+1. **Current branch**: The branch you are working on (e.g., `main`, `develop`).
+2. **Changes not staged for commit**: Files that have been modified but not added to the staging area yet.
+3. **Untracked files**: Files that are in your working directory but aren't tracked by Git yet.
+4. **Changes to be committed**: Files that have been added to the staging area and are ready to be committed.
+
+### When and why to use `git status`:
+- **When to use**:  
+  - **Before committing**: To check which files are staged and which aren't.
+  - **After modifying files**: To see what changes have been made since the last commit.
+  - **Before pushing**: To ensure you are pushing the correct changes.
+  - **Before pulling or merging**: To ensure your local changes won't conflict with the remote repository.
+
+- **Why to use**:
+  - **Keep track of your progress**: It helps you understand where you are in the development process.
+  - **Avoid mistakes**: You can verify what is going to be committed or pushed, preventing unwanted changes from being added.
+  - **Debugging**: Helps track any files that might have been missed or forgotten about during commits. 
+
+### Example output of `git status`:
+```bash
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   app.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        newFile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+This tells you that `index.html` and `app.js` are modified but not yet staged, and `newFile.txt` is untracked (not added to Git yet).
 
 
