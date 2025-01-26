@@ -5,8 +5,8 @@ right shift: n >> k = n / (2^k)
                The value of this binary number is calculated as: <br>
 
 The value of this binary number is calculated as: <br>
-  \[
-  2^{14} + 2^{13} + 2^{12} + \dots + 2^{0} = 2^{15} - 1
-  \]
+
+  2^14 + 2^13 + 2^12 + ... + 2^0 = 2^{15} - 1
+
 
 
