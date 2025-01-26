@@ -10,3 +10,6 @@ right shift: n >> k = n / (2^k)
 
 
  - in c/c++/java int means signed. for unsigned mention unsigned int x;
+
+
+left shift: n >> k = n * (2^k)
