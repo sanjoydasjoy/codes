@@ -1,4 +1,4 @@
-right shift: n >> k = n / (2^k)
+### right shift: n >> k = n / (2^k)
 
 
  - largest **signed** int number (16 bit) = 0111 1111 1111 1111 =  2^14 + 2^13 +...+2^0 = 2^(14+1)-1 /(2-1)=2^15-1=32,767=INT_MAX<br>
@@ -11,5 +11,6 @@ right shift: n >> k = n / (2^k)
 
  - in c/c++/java int means signed. for unsigned mention unsigned int x;
 
+<br><br> 
 
-left shift: n >> k = n * (2^k)
+### left shift: n >> k = n * (2^k)
