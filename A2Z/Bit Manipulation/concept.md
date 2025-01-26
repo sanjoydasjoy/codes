@@ -12,3 +12,5 @@ The value of this binary number is calculated as:  2^14 + 2^13 + 2^12 + ... + 2^
 
 
 The value of this binary number is calculated as:  2^15 + 2^13 + 2^12 + ... + 2^0 = 2^(15+1) - 1 / (2 - 1) = 2^16 - 1 = 65,535 = INT_MAX <br><br>
+
+ - in c/c++/java int means signed. for unsigned mention unsigned int x;
