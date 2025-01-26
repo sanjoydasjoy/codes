@@ -11,6 +11,6 @@
 
  - in c/c++/java int means signed. for unsigned mention unsigned int x;
 
-<br><br> 
+<br> 
 
 ### left shift: n >> k = n * (2^k)
