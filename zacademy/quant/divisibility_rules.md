@@ -53,9 +53,9 @@
 ❏ **Divisible by 13**: No simple rule; use division.  
 ❏ **Divisible by 14**: A number is divisible by 14 if it is divisible by both 2 and 7.  
 ❏ **Divisible by 15**: A number is divisible by 15 if it is divisible by both 3 and 5.  
-15. **Divisible by 16**: A number is divisible by 16 if its last four digits form a number divisible by 16.  
-16. **Divisible by 17**: No simple rule; use division.  
-17. **Divisible by 18**: A number is divisible by 18 if it is divisible by both 2 and 9.  
-18. **Divisible by 19**: No simple rule; use division.  
+❏ **Divisible by 16**: A number is divisible by 16 if its last four digits form a number divisible by 16.  
+❏ **Divisible by 17**: No simple rule; use division.  
+❏ **Divisible by 18**: A number is divisible by 18 if it is divisible by both 2 and 9.  
+❏ **Divisible by 19**: No simple rule; use division.  
 
 ---
