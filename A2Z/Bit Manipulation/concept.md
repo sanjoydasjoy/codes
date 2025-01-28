@@ -14,3 +14,14 @@
 <br> 
 
 ### left shift: n << k = n * (2^k)
+
+### LSB of a digit = num & 1;
+
+### number of set bits in a digit 
+
+          while(num != 0){
+            num = num&(num-1);
+            cnt++;
+          }
+          /* this works because num & (num - 1) clears the rightmost set bit. 12 & 11 = 1100 & 1011 = 1000
+             each iteration clears one set bit, when all set bits are cleared, num becomes 0, the loop stops */
