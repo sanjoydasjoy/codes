@@ -1,6 +1,23 @@
 question link: 
 https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/
 
+
+// brute force
+class Solution {
+public:
+    int minBitFlips(int start, int goal) {
+        int a = start, b = goal;
+        int cnt = 0;
+        while(a!=0 or b!=0){
+            if((a & 1) != (b & 1)) cnt++;
+            a = a >> 1;
+            b = b >> 1;
+        }
+        return cnt;
+    }
+};
+
+
 // using builtin function 
 class Solution {
 public:
@@ -11,7 +28,8 @@ public:
     }
 };
 
-// proper approach
+
+// efficient approach
 class Solution {
 public:
     int minBitFlips(int start, int goal) {
