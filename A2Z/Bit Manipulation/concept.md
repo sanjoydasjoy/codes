@@ -13,4 +13,4 @@
 
 <br> 
 
-### left shift: n >> k = n * (2^k)
+### left shift: n << k = n * (2^k)
