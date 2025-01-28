@@ -46,3 +46,16 @@
    **Example**: 1,458 is divisible by 9 because 1 + 4 + 5 + 8 = 18, and 18 is a multiple of 9.  
 
 ---
+
+9. **Divisible by 10**: A number is divisible by 10 if it ends in 0.  
+10. **Divisible by 11**: Subtract the sum of the digits in odd positions from the sum of the digits in even positions. If the result is divisible by 11 (including 0), the number is divisible by 11.  
+11. **Divisible by 12**: A number is divisible by 12 if it is divisible by both 3 and 4.  
+12. **Divisible by 13**: No simple rule; use division.  
+13. **Divisible by 14**: A number is divisible by 14 if it is divisible by both 2 and 7.  
+14. **Divisible by 15**: A number is divisible by 15 if it is divisible by both 3 and 5.  
+15. **Divisible by 16**: A number is divisible by 16 if its last four digits form a number divisible by 16.  
+16. **Divisible by 17**: No simple rule; use division.  
+17. **Divisible by 18**: A number is divisible by 18 if it is divisible by both 2 and 9.  
+18. **Divisible by 19**: No simple rule; use division.  
+
+For numbers like 13, 17, and 19, there are no widely used simple rules, so division is often the easiest method.
