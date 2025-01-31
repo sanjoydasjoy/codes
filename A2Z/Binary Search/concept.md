@@ -53,7 +53,7 @@
     }
 
 
-
+<br><br>
 ### ❏ upper bound === smallest index such that arr[ind] > x 
 
 	arr = [2, 3, 6, 7, 8, 8, 11, 11, 11, 12]
@@ -61,21 +61,22 @@
  	x = 6, index = 3; x = 11, index = 9; x = 12/13, index = 10
 
 
+<br><br>
 
-## **🔹 Given Array**
+### ❏ lower bound - upper bound table
 ```
 arr = [1, 2, 4, 4, 4, 6, 7, 9, 9, 10, 15]
-       [0  1  2  3  4  5  6  7  8   9  10]
+      [0  1  2  3  4  5  6  7  8   9  10]
 ```
 
 |  x   |  lower_bound (arr[ind] ≥ x) |  upper_bound  (arr[ind] > x) |
 |------|-----------------------------|-----------------------------|
-|  4   |  2   (First occurrence of `4`)  | `5`  (First `>4` is `6`)  |
-|  5   |  5   (First `≥5` is `6`)  | `5`  (First `>5` is `6`)  |
-|  6   |  5   (First occurrence of `6`)  | `6`  (First `>6` is `7`)  |
-|  9   |  7   (First occurrence of `9`)  | `9`  (First `>9` is `10`) |
-|  10  |  9   (First occurrence of `10`) | `10` (First `>10` is `15`) |
-|  12  |  10  (First `≥12` is `15`) | `10` (First `>12` is `15`) |
-|  15  |  10  (First occurrence of `15`) | `11` (Out of bounds) |
+|  4   |  2   (First occurrence of  4 )  |  5   (First  >4  is  6 )  |
+|  5   |  5   (First  ≥5 is  6 )  |  5   (First  >5  is  6 )  |
+|  6   |  5   (First occurrence of  6 )  |  6   (First  >6  is  7 )  |
+|  9   |  7   (First occurrence of  9 )  |  9   (First  >9  is  10 ) |
+|  10  |  9   (First occurrence of  10 ) |  10  (First  >10  is  15 ) |
+|  12  |  10  (First  ≥12  is  15 ) |  10  (First >12  is  15 ) |
+|  15  |  10  (First occurrence of  15 ) |  11  (Out of bounds) |
 
 ---
