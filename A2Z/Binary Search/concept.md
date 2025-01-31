@@ -31,6 +31,21 @@
      return ans; 
     }
 
+    // using builtin function
+    
+    int lowerBound(vector<int> arr, int n, int x) {
+	    int lb = lower_bound(arr.begin(),arr.end(),x) - arr.begin();
+	    return lb;
+    
+    }
+
+    // for special range [l, r]
+    
+    int lowerBound(vector<int>& arr, int l, int r, int x) {
+        int it = lower_bound(arr.begin() + l, arr.begin() + r + 1, x) - arr.begin();
+        return it; 
+    }
+
 
 
 ### ❏ higher bound === smallest index such that arr[ind] >= x 
