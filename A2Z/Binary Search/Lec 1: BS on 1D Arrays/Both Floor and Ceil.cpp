@@ -31,3 +31,27 @@ class Solution {
         return res;
     }
 };
+
+
+// using direct functions
+
+class Solution {
+  public:
+    vector<int> getFloorAndCeil(int x, vector<int> &arr) {
+        vector<int> res;
+        sort(arr.begin(), arr.end());
+        
+        // Finding floor using upper_bound - 1
+        auto ub = upper_bound(arr.begin(), arr.end(), x);
+        if (ub == arr.begin()) res.push_back(-1);  // No floor exists
+        else res.push_back(*(ub - 1));
+
+        // Finding ceil using lower_bound
+        auto lb = lower_bound(arr.begin(), arr.end(), x);
+        if (lb == arr.end()) res.push_back(-1);  // No ceil exists
+        else res.push_back(*lb);
+        
+        return res;
+    }
+};
+
