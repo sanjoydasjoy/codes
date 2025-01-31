@@ -1,6 +1,9 @@
 question link:
 https://leetcode.com/problems/assign-cookies/
 
+similar question:
+https://leetcode.com/problems/maximum-matching-of-players-with-trainers/description/
+
 class Solution {
 public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
