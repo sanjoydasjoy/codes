@@ -17,3 +17,10 @@ int lowerBound(vector<int> arr, int n, int x) {
 	}
 	return ans;
 }
+
+// using built in function 
+
+int lowerBound(vector<int> arr, int n, int x) {
+	int lb = lower_bound(arr.begin(),arr.end(),x) - arr.begin();
+	return lb;
+}
