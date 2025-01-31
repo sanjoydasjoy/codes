@@ -113,5 +113,33 @@ arr = [1, 2, 4, 4, 4, 6, 7, 9, 9, 10, 15]
 
 ### ❏ floor and ceil in sorted array
 
- - floor = largest number in sorted array <= x   -> [this is reverse of lower bound] <br>
- - ceil = smallest number in sorted array >= x   -> [this is lower bound] <br>
+ - floor = largest number in sorted array <= x     [this is reverse of lower bound] <br>
+ - ceil = smallest number in sorted array >= x     [this is lower bound] <br>
+<br>
+
+		arr = [1, 2, 4, 4, 4, 6, 7, 9, 9, 10, 15]
+                      [0  1  2  3  4  5  6  7  8   9  10]
+
+
+
+
+```
+arr = [1, 2, 4, 4, 4, 6, 7, 9, 9, 10, 15]
+       [0  1  2  3  4  5  6  7  8   9  10]
+```
+
+| x   | floor (arr[ind] ≤ x) | ceil (arr[ind] ≥ x) |
+|-----|----------------------|----------------------|
+| 4   | 4 (Last occurrence at index 4) | 2 (First occurrence at index 2) |
+| 5   | 4 (Largest ≤5 is 4 at index 4) | 5 (First ≥5 is 6 at index 5) |
+| 6   | 5 (First occurrence at index 5) | 5 (First ≥6 at index 5) |
+| 10  | 9 (First occurrence at index 9) | 9 (First ≥10 at index 9) |
+| 12  | 9 (Largest ≤12 is 10 at index 9) | 10 (First ≥12 is 15 at index 10) |
+
+---
+
+
+- **Floor finds the largest number ≤ x** (moves left if x is not present).  
+- **Ceil finds the smallest number ≥ x** (moves right if x is not present).  
+- If `x` exists in `arr`, **ceil(x) = lower_bound(x)** and **floor(x) = upper_bound(x) - 1**.  
+
