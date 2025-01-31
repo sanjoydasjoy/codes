@@ -12,6 +12,8 @@
             return -1;
         }
 
+---
+<br><br>
 
 ### ❏ lower bound === smallest index such that arr[ind] >= x 
 
@@ -52,6 +54,7 @@
         return it; 
     }
 
+---
 
 <br><br>
 ### ❏ upper bound === smallest index such that arr[ind] > x 
@@ -84,6 +87,7 @@
 		return ub;
 	}
 
+---
 
 <br><br>
 
@@ -104,3 +108,10 @@ arr = [1, 2, 4, 4, 4, 6, 7, 9, 9, 10, 15]
 |  15  |  10  (First occurrence of  15 ) |  11  (Out of bounds) |
 
 ---
+
+<br><br>
+
+### ❏ floor and ceil in sorted array
+
+ - floor = largest number in sorted array <= x   { this is reverse of lower bound } <br>
+ - ceil = smallest number in sorted array >= x   { this is lower bound } <br>
