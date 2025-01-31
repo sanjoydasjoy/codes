@@ -60,6 +60,30 @@
  	      [0  1  2  3  4  5   6   7   8   9]
  	x = 6, index = 3; x = 11, index = 9; x = 12/13, index = 10
 
+  	int upperBound(vector<int> &arr, int x, int n){
+	
+		int left = 0, right = arr.size() - 1;
+		int ans = n;
+		while(left<=right){
+			int mid = left + ((right - left) >> 1);
+			if(arr[mid] > x){
+				ans = mid;
+				right = mid - 1;
+			}
+			else{
+				left = mid + 1;
+			}
+		}
+		return ans;	
+	}
+
+	// using built in function
+
+	int upperBound(vector<int> &arr, int x, int n){
+		int ub = upper_bound(arr.begin(),arr.end(),x) - arr.begin();
+		return ub;
+	}
+
 
 <br><br>
 
