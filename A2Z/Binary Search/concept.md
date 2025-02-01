@@ -11,6 +11,7 @@
             }
             return -1;
         }
+<br>
 
 ---
 <br><br>
@@ -53,6 +54,7 @@
         int it = lower_bound(arr.begin() + l, arr.begin() + r + 1, x) - arr.begin();
         return it; 
     }
+<br>
 
 ---
 
@@ -86,6 +88,7 @@
 		int ub = upper_bound(arr.begin(),arr.end(),x) - arr.begin();
 		return ub;
 	}
+<br>
 
 ---
 
