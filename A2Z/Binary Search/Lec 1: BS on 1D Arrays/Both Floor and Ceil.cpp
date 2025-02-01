@@ -1,6 +1,8 @@
 question link:
 https://www.geeksforgeeks.org/problems/ceil-the-floor2802/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=ceil-the-floor
 
+similar question:
+https://www.naukri.com/code360/problems/ceiling-in-a-sorted-array_1825401
 
 class Solution {
   public:
