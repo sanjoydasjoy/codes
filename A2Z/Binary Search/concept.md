@@ -107,6 +107,7 @@ arr = [1, 2, 4, 4, 4, 6, 7, 9, 9, 10, 15]
 |  12  |  10  (First  ≥12  is  15 ) |  10  (First >12  is  15 ) |
 |  15  |  10  (First occurrence of  15 ) |  11  (Out of bounds) |
 <br>
+
 ---
 
 <br><br>
@@ -139,4 +140,5 @@ arr = [1, 2, 4, 4, 4, 6, 7, 9, 9, 10, 15]
 - **Ceil finds the smallest number ≥ x** (moves right if x is not present).  
 - If `x` exists in `arr`, **ceil(x) = lower_bound(x)** and **floor(x) = upper_bound(x) - 1**.  
 <br>
+
 ---
