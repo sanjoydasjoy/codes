@@ -1,5 +1,8 @@
 question link:
-https://leetcode.com/problems/search-insert-position/description/
+https://leetcode.com/problems/search-insert-position/description/\
+
+/// this was old childish code !
+
 
 class Solution {
 public:
@@ -15,3 +18,28 @@ public:
     
 };
 };
+
+
+//// binary search
+
+question link:
+https://www.naukri.com/code360/problems/algorithm-to-find-best-insert-position-in-sorted-array_839813?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries&leftPanelTabValue=SUBMISSION
+
+int binary_search(vector<int>& arr, int m){
+	int left = 0, right = arr.size() - 1;
+	while(left<=right){
+		int mid = left + ((right - left)>>1);
+		if(arr[mid] == m) return mid;
+		else if(arr[mid] > m) right = mid - 1;
+		else left = mid + 1;
+	}
+	return -1;
+}
+int searchInsert(vector<int>& arr, int m)
+{
+	if(!arr.size())return 0;
+	auto it = upper_bound(arr.begin(),arr.end(),m);
+	if(binary_search(arr,m) != -1) return binary_search(arr,m);
+	return it - arr.begin();
+
+}
