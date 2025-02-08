@@ -2,6 +2,8 @@ question link:
 https://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/
 
 
+// using hashing 
+
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
