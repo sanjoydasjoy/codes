@@ -43,3 +43,20 @@ int searchInsert(vector<int>& arr, int m)
 	return it - arr.begin();
 
 }
+
+// another 
+int binary_search(vector<int>& arr, int m){
+	int left = 0, right = arr.size() - 1;
+	int ans = arr.size();
+	while(left<=right){
+		int mid = left + ((right - left)>>1);
+		if(arr[mid] >= m) {ans = mid; right = mid - 1;}
+		else left = mid + 1;
+	}
+	return ans;
+}
+int searchInsert(vector<int>& arr, int m)
+{
+	if(!arr.size())return 0;
+	return binary_search(arr,m);
+}
