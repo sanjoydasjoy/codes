@@ -1,6 +1,8 @@
 question link:
 https://leetcode.com/problems/reverse-words-in-a-string/description/
 
+https://www.geeksforgeeks.org/problems/isomorphic-strings-1587115620/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card
+
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
