@@ -15,6 +15,5 @@
 | 7  | **First Ascending**, Second Ignored  | ```cpp std::sort(vec.begin(), vec.end(), [](const pair<int, int>& a, const pair<int, int>& b) { return a.first < b.first; }); ``` |
 | 8  | **First Descending**, Second Ignored | ```cpp std::sort(vec.begin(), vec.end(), [](const pair<int, int>& a, const pair<int, int>& b) { return a.first > b.first; }); ``` |
 
----
 
 
