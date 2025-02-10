@@ -4,7 +4,7 @@
 ---
 
 ### **All 8 Sorting Cases for `vector<pair<int, int>>`**
-<br>
+
 | #  | Sorting Order                         | Full C++ Sorting Code |
 |----|--------------------------------------|----------------------|
 | 1  | First Ascending, Second Ascending  | sort(vec.begin(), vec.end()) |
@@ -16,5 +16,5 @@
 | 7  | First Ascending, Second Ignored  | sort(vec.begin(), vec.end(), [](const pair<int, int>& a, const pair<int, int>& b) { return a.first < b.first; }) |
 | 8  | First Descending, Second Ignored | sort(vec.begin(), vec.end(), [](const pair<int, int>& a, const pair<int, int>& b) { return a.first > b.first; }) |
 
-
+--- 
 
